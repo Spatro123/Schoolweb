@@ -1,0 +1,190 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  
+  .imageContainer {
+    flex-shrink: 0;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image {
+    width: 300px;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .textContainer {
+    max-width: 600px;
+    padding-left: 20px;
+    flex: 1; 
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; 
+  }
+  
+  .founderInfo {
+    margin-bottom: 20px;
+  }
+  
+  .founderName {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-align: center;
+  }
+  
+  .founderQualification,
+  .founderAwards {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .socialLinks {
+    margin-top: 15px;
+    text-align: center; 
+  }
+  
+  .socialIcon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: var(--theme-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 5px; 
+  }
+  
+  .socialIcon:hover {
+    background-color: var(--theme-color);
+    color: #fff;
+  }
+  
+
+  .messageContainer {
+    margin-top: 50px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify; 
+  }
+  
+  .button {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: var(--theme-color);
+  }
+  
+  .credit {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .credit a {
+    color: var(--theme-color);
+    text-decoration: none;
+  }
+  
+  .credit a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image {
+      width: 200px;
+    }
+  
+    .textContainer {
+      padding-left: 0; 
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .founderName {
+      font-size: 22px;
+    }
+  
+    .founderQualification,
+    .founderAwards {
+      font-size: 16px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .image {
+      width: 150px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .founderName {
+      font-size: 18px;
+    }
+  
+    .founderQualification,
+    .founderAwards {
+      font-size: 14px;
+    }
+  
+    .description {
+      font-size: 13px;
+    }
+  
+    .button {
+      padding: 8px 16px; 
+      font-size: 14px;
+    }
+  }
+  

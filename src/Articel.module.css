@@ -1,0 +1,75 @@
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f8fa;
+  }
+  
+  .apptitle {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .cardlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .cardimage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .cardcontent {
+    padding: 20px;
+  }
+  
+  .cardtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .cardauthor,
+  .carddate {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .carddescription {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .cardbutton {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cardbutton:hover {
+    background-color: #e04848;
+  }
+  

@@ -1,0 +1,85 @@
+.galleryPage {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(0, 0, 255);
+}
+
+.filterSection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterSection .activeFilter {
+  background: #007bff;
+  color: #fff;
+}
+
+.filterSection button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.eventCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.eventCard.festivals {
+  height: 300px;
+  width: 350px;
+}
+
+.eventCard.academics {
+  height: 350px;
+  width: 270px;
+}
+
+.eventCard.sports {
+  height: 400px;
+  width: 300px;
+}
+
+.eventCard.meetups {
+  height: 280px;
+  width: 240px;
+}
+
+.image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.eventInfo {
+  padding: 10px;
+}
+
+.eventInfo h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.eventInfo p {
+  color: #666;
+  font-size: 0.9rem;
+}

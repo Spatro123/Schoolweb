@@ -1,0 +1,40 @@
+
+.eventCard {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+  
+  .cardDetails {
+    padding: 10px;
+    text-align: center;
+  
+  }
+  
+  .cardHeaders {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cardLocation {
+    font-size: 14px;
+    color: gray;
+  }
+  

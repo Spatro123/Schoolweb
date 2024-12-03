@@ -1,0 +1,101 @@
+.App {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentwrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.imagesection img {
+    width: 250px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.featuressection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.featurecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.featureicon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.featuretitle {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.imagegallery {
+    margin-top: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.imagegallery h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.imagegallery p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.playbutton {
+    background-color: transparent;
+    color: #007bff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.galleryimage {
+    position: relative;
+}
+
+.galleryimage img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallerynav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.gallerynav button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.gallerynav button:hover {
+    background-color: #0056b3;
+}

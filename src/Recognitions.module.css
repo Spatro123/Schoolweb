@@ -1,0 +1,113 @@
+.recognitionscontainer {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto; 
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: var(--theme-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 2px;
+    background-color:var(--theme-color);
+    margin: 10px auto 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 50px;
+  
+  }
+  
+  .award {
+    border: none;
+    padding: 20px;
+    width: 250px;
+    background: none;
+    box-shadow: none;
+    
+  }
+  
+  .award h3 {
+    font-size: 18px;
+    color: var(--theme-color);
+    margin: 10px 0;
+  }
+  
+  .award p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .awardlogo {
+    max-width: 300px; 
+    margin: 10px 0;
+  }
+  
+  .viewmorebutton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--theme-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .viewmorebutton:hover {
+    background: #003f7f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .awards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .award {
+      width: 90%; /* Adjust award width for smaller screens */
+    }
+  
+    .awardlogo {
+      max-width: 200px; /* Resize images for smaller screens */
+    }
+  
+    h2 {
+      font-size: 20px; /* Smaller header size for compact screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px; /* Smaller header size for very small screens */
+    }
+  
+    .award {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .viewmorebutton {
+      font-size: 12px; /* Smaller button font */
+      padding: 8px 16px; /* Adjust button size */
+    }
+  }
+  

@@ -1,0 +1,102 @@
+.academicPrograms {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title span {
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.programList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.programCard {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  text-align: left;
+}
+
+.programImage {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.programTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.programDescription {
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1; /* Allows description to take remaining space */
+  margin-bottom: 10px;
+}
+
+.programCategory {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.applyButton {
+  background-color: var(--theme-color); 
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Aligns button to the start of content */
+}
+
+.applyButton:hover {
+  background-color: #e5533d;
+}
+
+.footerText {
+  font-size: 16px;
+  color: #666;
+  margin-top: 40px;
+}
+
+.viewAllLink {
+  color: var(--theme-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.viewAllLink:hover {
+  text-decoration: underline;
+}

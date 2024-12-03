@@ -1,0 +1,98 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .searchBar {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchBar:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .noticeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .noticeTable th,
+  .noticeTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .noticeTable th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .noticeTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .noticeTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .noResult {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .searchBar {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .noticeTable th,
+    .noticeTable td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px;
+    }
+  
+    .searchBar {
+      font-size: 12px;
+    }
+  
+    .noticeTable th,
+    .noticeTable td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,445 @@
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .admissionprocess {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+   
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .step {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+  }
+  
+  .stepnumber {
+    font-size: 28px;
+    color: var(--theme-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stepIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .steptitle {
+    font-size: 18px;
+    color: var(--theme-color);
+    margin: 0;
+  }
+  
+  .stepdescription {
+    font-size: 14px;
+    color: #333;
+    white-space: pre-line;
+  }
+  
+  .programs {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .programoptions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .program {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 50px;
+    width: 340px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
+  .programIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    display: inline-block;
+    border: 1px solid  black;
+    padding: 10px;
+  }
+  
+  .programtitle {
+    font-size: 20px;
+    color: var(--theme-color);
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .programdescription {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .findprogramsbtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .findprogramsbtn:hover {
+    background-color: #454ba0;
+  }
+
+
+
+  .admissionForm {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    margin: 20px auto; /* Centers the form horizontally */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid lightgray;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .input, .select, .fileInput {
+    width: 100%; /* Matches the width of the form container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #4550a0;
+  }
+  
+
+
+
+
+
+  .faqSection {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faqItem {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.faqQuestion {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.faqQuestion:hover {
+  color: #4CAF50;
+}
+
+.faqToggle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faqAnswer {
+  font-size: 16px;
+  color: #555;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.admissionDetails {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.eligibilityList {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+  
+}
+
+
+.Applyhead{
+  text-align: center;
+  border: 1px solid red;
+  font-size: 20px;
+}
+
+.eligibilityList li {
+  margin-bottom: 10px;
+}
+
+.eligibilityList li strong {
+  color: var(--theme-color);
+}
+.eligibilityTable, .refundPolicyTable, .feeStructureTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.eligibilityTable th, .refundPolicyTable th, .feeStructureTable th {
+  padding: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.eligibilityTable td, .refundPolicyTable td, .feeStructureTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.lateralEntryList {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .step, .program {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .steps, .programoptions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .submitButton, .findprogramsbtn {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .faqQuestion {
+    font-size: 16px;
+  }
+
+  .faqAnswer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .steps, .programoptions {
+    gap: 10px;
+  }
+
+  .step, .program {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .stepnumber {
+    font-size: 24px;
+  }
+
+  .programIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .steptitle {
+    font-size: 16px;
+  }
+
+  .stepdescription, .programdescription {
+    font-size: 12px;
+  }
+
+  .findprogramsbtn, .submitButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .faqQuestion {
+    font-size: 14px;
+  }
+
+  .faqAnswer {
+    font-size: 12px;
+  }
+
+  .eligibilityList li {
+    font-size: 14px;
+  }
+
+  .eligibilityTable, .refundPolicyTable, .feeStructureTable {
+    font-size: 14px;
+  }
+
+  .eligibilityTable th, .refundPolicyTable th, .feeStructureTable th {
+    padding: 8px;
+  }
+
+  .eligibilityTable td, .refundPolicyTable td, .feeStructureTable td {
+    padding: 6px;
+  }
+
+  .applyhead {
+    font-size: 18px;
+  }
+}
+
+/* Extra Small Screens (Below 400px) */
+@media (max-width: 400px) {
+  .steps, .programoptions {
+    gap: 5px;
+  }
+
+  .step, .program {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .stepnumber {
+    font-size: 20px;
+  }
+
+  .stepIcon, .programIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .steptitle {
+    font-size: 14px;
+  }
+
+  .stepdescription, .programdescription {
+    font-size: 10px;
+  }
+
+  .submitButton, .findprogramsbtn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .faqQuestion {
+    font-size: 12px;
+  }
+
+  .faqAnswer {
+    font-size: 10px;
+  }
+
+  .eligibilityList li {
+    font-size: 12px;
+  }
+
+  .eligibilityTable, .refundPolicyTable, .feeStructureTable {
+    font-size: 12px;
+  }
+
+  .eligibilityTable th, .refundPolicyTable th, .feeStructureTable th {
+    padding: 6px;
+  }
+
+  .eligibilityTable td, .refundPolicyTable td, .feeStructureTable td {
+    padding: 4px;
+  }
+}

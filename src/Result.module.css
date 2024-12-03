@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+  max-width: 1200px; /* Set maximum width for the page */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding for better visual spacing */
+}
+
+.header {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #281ee4;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.section {
+  margin: 30px 20px;
+  max-width: 1000px; /* Restrict section width */
+  margin-left: auto; /* Center align sections */
+  margin-right: auto; /* Center align sections */
+}
+
+.section h2 {
+  color: var(--theme-color);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.studentgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.studentcard {
+  background: #fff;
+  border: 2px solid var(--theme-color);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.studentcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: var(--theme-color);
+}
+
+.studentimage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--theme-color);
+}
+
+.studentinfo h3 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.studentinfo p {
+  margin: 0;
+  color: var(--theme-color);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 1.2rem;
+  }
+
+  .studentimage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .studentinfo h3 {
+    font-size: 1.1rem;
+  }
+
+  .studentinfo p {
+    font-size: 1rem;
+  }
+}

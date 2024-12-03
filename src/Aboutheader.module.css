@@ -1,0 +1,187 @@
+.App {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.herosection {
+    background-image: url('./img\ \(1\).png');
+    background-size: cover;  
+    background-position: center;
+    height: 100vh;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: var(--theme-color);
+}
+
+.featuressection {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featurecard {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featurecard:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.featurecard h3 {
+    font-size: 1.25rem;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+}
+
+.featurecard p {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Information Links Styling */
+.infolinks {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.infolinks a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.infolinks a:hover {
+    color: #00509e;
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .herosection {
+        height: 400px;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .featuressection {
+        padding: 20px;
+    }
+
+    .featurecard {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .icon {
+        font-size: 1.75rem;
+    }
+
+    .featurecard h3 {
+        font-size: 1.1rem;
+    }
+
+    .featurecard p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .herosection {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .overlay h1 {
+        font-size: 1.75rem;
+        line-height: 1.1;
+    }
+
+    .featuressection {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .featurecard {
+        padding: 15px;
+    }
+
+    .featurecard h3 {
+        font-size: 1rem;
+    }
+
+    .featurecard p {
+        font-size: 0.85rem;
+    }
+
+    .infolinks {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .featuressection {
+        padding: 5px;
+    }
+
+    .featurecard {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .infolinks {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,75 @@
+.missionvision {
+    font-family: "Arial", sans-serif;
+    color: var(--theme-color);
+    line-height: 1.6;
+  }
+  
+  .sectionmission,
+  .sectionvision,
+  .sectionwhyus {
+    padding: 2rem 5%;
+    text-align: center;
+  }
+  
+  .sectionmission h2,
+  .sectionvision h2,
+  .sectionwhyus h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #ff6347; /* Highlight color */
+  }
+  
+  .mission p,
+  .vision p,
+  .whyus p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+  }
+  
+  .imagegrid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .imagegrid img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .visionimage img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+  }
+  
+  .whyus .features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    max-width: 300px;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  
+  .feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

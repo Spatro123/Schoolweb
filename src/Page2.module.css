@@ -1,0 +1,309 @@
+.aboutus {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    /* padding: 20px; */
+    color: var(--theme-color);
+    background-color: white;
+}
+
+.centerAlign {
+    text-align: center;
+    margin-top: 20px;
+    /* text-decoration: underline;
+    padding: 10px; */
+}
+
+.centerAlign h2 {
+    margin-top: 20px;
+}
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.aboutPoints {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.point {
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    flex: 1 1 200px; 
+}
+
+.missionVision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.frame {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    flex: 1;
+    max-width: 600px;
+}
+
+.missionFrame {
+    /* background-color: #e8e8f0; */
+}
+
+.visionFrame {
+    /* background-color: #e8e8f0; */
+}
+
+.frame img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.leaderProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.leaderProfile img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderProfile h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.leaderProfile h4 {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.sectionLeadershipTeam, .sectionFounders {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.zigzagLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.historySection {
+    margin-top: 40px;
+}
+
+.historyContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.historyText {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historyImages {
+    flex: 1;
+    display: grid;
+    gap: 10px;
+}
+
+.historyImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+.aboutpage1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .aboutheader {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .headerimage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .headertitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .headertitle span {
+    color: #ffd700; /* Yellow color for "US" */
+  }
+  
+  .aboutsection {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .sectiontitle {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #ffd700; /* Yellow color for "STORY" */
+  }
+  
+  .abouttext {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .aboutcontent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .aboutimages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .schoolimage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .aboutcontent {
+      flex-direction: column;
+    }
+    .headertitle {
+      font-size: 2.5rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .aboutPoints, .missionVision {
+        flex-direction: column;
+        align-items: center;
+    }
+    .missionFrame, .visionFrame {
+        transform: none; 
+    }
+    .frame {
+        max-width: 100%;
+    }
+    .historyContent {
+        flex-direction: column;
+    }
+    .sectionLeadershipTeam, .sectionFounders {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    .point {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .frame {
+        padding: 15px;
+    }
+    .historyText, .historyImages {
+        padding: 10px;
+    }
+    .leaderProfile img {
+        width: 120px;
+    }
+    .leaderProfile h3 {
+        font-size: 1rem;
+    }
+    .leaderProfile h4 {
+        font-size: 0.9rem;
+    }
+}

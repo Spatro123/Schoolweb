@@ -1,0 +1,98 @@
+.campusLifePage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .campusLifePage h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--theme-color);
+  }
+  
+  .campusLifePage p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .activitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .activityCard {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 5s ease-in-out infinite;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(30px);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(30px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .activityCard:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .activityCard:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .activityCard:nth-child(3) {
+    animation-delay: 2s;
+  }
+  
+  .activityImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .activityContent {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .activityContent h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: var(--theme-color);
+    text-align: center;
+  }
+  
+  .activityContent p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  

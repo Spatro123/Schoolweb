@@ -1,0 +1,204 @@
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--theme-color);
+}
+
+/* General section styling */
+.section {
+  flex: 1;
+  margin: 1rem;
+  min-width: 200px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.section1 {
+  flex: 1;
+  margin: 1rem;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+/* Logo styling */
+.logoImage {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+/* Description text */
+.description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Heading for sections */
+.heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Links list styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Subscribe form styling */
+.subscribe {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.subscribe input {
+  padding: 0.5rem;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  background-color: var(--theme-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Social icons styling */
+.socialIcons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Contact info styling */
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--theme-color);
+}
+
+.contactIcon {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Bottom bar styling */
+.bottomBar {
+  display: grid;
+  justify-content: center;
+  border-top: 1px solid #fff;
+  color: var(--theme-color);
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-bottom: 15px solid var(--theme-color);
+}
+
+.bottomBar p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+
+/* Mobile and small screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactInfo div {
+    margin-bottom: 0.5rem;
+  }
+
+  .bottomBar {
+    border-top: none;
+    padding: 1rem 0;
+  }
+}
+
+/* Tablet and medium screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    flex: 1 1 calc(50% - 2rem); /* Two sections per row */
+    margin: 1rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .contactInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

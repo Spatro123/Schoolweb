@@ -1,0 +1,145 @@
+
+.testimonialcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+.testimonialcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slick-slider {
+    margin-top: 20px;
+  }
+  
+  .slick-dots li button:before {
+    color: #ccc;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ffcc00;
+  }
+  
+  .testimonialcontent {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    
+  }
+  
+  .testimonialavatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid var(--theme-color);
+  }
+  
+  .testimonialheader {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .testimonialheader .testimonialquoteicon {
+    font-size: 40px;
+    color: #ffcc00;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .testimonialheader h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .testimonialheader .highlight {
+    color: var(--theme-color);
+  }
+  
+  .testimonialdivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .testimonialdivider .line {
+    width: 40px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 5px;
+  }
+  
+  .testimonialdivider .highlightbar {
+    width: 60px;
+    height: 3px;
+    background-color: var(--theme-color);
+  }
+  
+  .testimonialcontent {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .testimonialavatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #ffcc00;
+  }
+  
+  .testimonialcontent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .testimonialrole {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .testimonialstars span {
+    font-size: 1.2rem;
+    color: #ffcc00;
+  }
+  
+  .testimonialtext {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #444;
+    text-align: justify;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonialcontainer {
+      padding: 10px;
+    }
+  
+    .testimonialheader h2 {
+      font-size: 1.5rem;
+    }
+  
+    .testimonialtext {
+      font-size: 0.9rem;
+    }
+  }

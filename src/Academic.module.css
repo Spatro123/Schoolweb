@@ -1,0 +1,178 @@
+.academicsPage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+
+.introSection, .missionSection, .statsSection, .bannerSection, .calendarSection, .downloadSection {
+  margin-bottom: 40px;
+}
+.introSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #2b4f93; 
+}
+
+.pageTitle {
+  font-size: 36px;
+  color: #2b4f93;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.pageTitle::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #2b4f93;
+  margin: 8px auto 0;
+}
+
+.text {
+  max-width: 600px;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+
+.missionSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7fb; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.missionImage {
+  width: 40%;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.missionText {
+  width: 30%;
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  color: #333;
+ 
+}
+
+.missionText p {
+  margin: 0;
+  line-height: 1.6; /* Ensures readability */
+}
+
+
+.statsSection {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.statItem {
+  margin: 20px;
+}
+
+.icon {
+  font-size: 36px;
+  color: #2b4f93;
+  height: 30px;
+  width: 30px;
+}
+.bannerSection {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+  background-image: url('./old-masters-picture-gallery-dresden-night.jpg'); /* Path to your banner image */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color for contrast */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  filter: blur(8px); 
+  z-index: 1; 
+}
+
+.bannerContent {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2; 
+  padding: 30px;
+  max-width: 80%;
+  width: 80%; 
+  margin: 0 auto; 
+  background-color:rgba(164, 158, 158, 0.5);
+}
+.bannerContent p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 500px; 
+  margin: 0 auto; 
+  white-space: normal; 
+  text-align: justify;
+  
+ 
+
+}
+
+
+.academicTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.academicTable th, .academicTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.downloadSection ul {
+  list-style: none;
+}
+
+.downloadSection a {
+  color: #2b4f93;
+  font-size: large;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .missionSection, .statsSection {
+    flex-direction: column;
+  }
+
+  .missionImage, .missionText {
+    width: 100%;
+  }
+}
