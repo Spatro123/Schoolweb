@@ -11,7 +11,7 @@ const data = [
   { icon: studentIcon, value: 20000, label: "Students" },
   { icon: coursesIcon, value: 80, label: "Courses" },
   { icon: eventsIcon, value: 850, label: "Events" },
-  { icon: skillIcon, value: 12000, label: "Skill Course Students" },
+  { icon: skillIcon, value: 12000, label: "Skill Courses" },
 ];
 
 const StatsSection = () => {
