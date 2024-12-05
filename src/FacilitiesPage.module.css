@@ -13,6 +13,8 @@
     text-align: center;
     color: #333;
     font-weight: bold;
+    width: 100%;
+    
   }
   
   .headerSection hr,
@@ -23,7 +25,7 @@
   }
   
   .highlight {
-    color: #ffd700; 
+    color:var(--theme-color); 
   }
   
   .facilitiesGrid {
@@ -58,6 +60,7 @@
   .facilityCard p {
     font-size: 0.9rem;
     color: #555;
+   
   }
   
   .affiliationSection {
@@ -71,10 +74,13 @@
   }
   
   .affiliationSection p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
-    max-width: 800px;
+    max-width: 1200px;
+    text-align: center;
     margin: 0 auto;
+    /* border:  1px solid red; */
+    margin-bottom: 20px;
   }
   
   @media (max-width: 768px) {

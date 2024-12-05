@@ -10,7 +10,7 @@
   }
   
   .title span {
-    color: #B22234;
+    color: var(--theme-color);
     text-decoration: underline;
   }
   

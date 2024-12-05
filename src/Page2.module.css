@@ -11,15 +11,25 @@
     margin-top: 20px;
     /* text-decoration: underline;
     padding: 10px; */
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
 .centerAlign h2 {
     margin-top: 20px;
+    text-align: center;
+    /* border: 1px solid red; */
 }
 .section {
     margin-top: 40px;
 }
 
+
+
+.centerAlign p{
+    
+    text-align: center;
+}
 .section h2 {
     font-size: 1.8rem;
     color: var(--theme-color);
@@ -81,7 +91,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 300px;
+    max-width: 500px;
     margin: 20px;
     border: 2px solid lightgray;
     padding: 10px;
@@ -163,7 +173,7 @@
 
 
 .aboutpage1 {
-    font-family: Arial, sans-serif;
+   
     color: #333;
     padding: 20px;
     background-color: #ffffff;
@@ -193,7 +203,7 @@
   }
   
   .headertitle span {
-    color: #ffd700; /* Yellow color for "US" */
+    color: #ffd700; 
   }
   
   .aboutsection {

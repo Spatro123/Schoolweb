@@ -57,13 +57,18 @@ const AboutUs = () => {
                     <h4>Founder</h4>
                     <p>Founder of the Train Platform School Movement in India.</p>
                 </div>
-
                 <div className={classes.leaderProfile}>
+                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" alt="Mrs. Inderjit Khurana" />
+                    <h3>Lt. Col. Surindar Singh Khurana</h3>
+                    <h4>Co-Founder</h4>
+                    <p>Founder of the Train Platform School Movement in India.</p>
+                </div>
+                {/* <div className={classes.leaderProfile}>
                     <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" />
                     <h3>Lt. Col. Surindar Singh Khurana</h3>
                     <h4>Co-Founder</h4>
                     <p>A sportsman and educational visionary.</p>
-                </div>
+                </div> */}
             </div>
 
             <div className={`${classes.section} ${classes.centerAlign}`}>

@@ -9,7 +9,7 @@ const PrincipalFounder = () => {
       name: "Dr. Tribhuban Swami",
       designation: "Principal",
       message:
-        "Welcome to our school Our mission is to inspire and empower our students to achieve their full potential and become leaders of tomorrow.",
+        "Welcome to our school! Our mission is to inspire and empower our students to achieve their full potential and become leaders of tomorrow.",
       image: principalImage,
     },
     {
@@ -23,23 +23,18 @@ const PrincipalFounder = () => {
 
   return (
     <div className={classes.container}>
-      <h1 className={classes.header}>Message from Founder and Principal</h1>
-      <div className={classes.cards}>
-        {people.map((person, index) => (
-          <div key={index} className={classes.profile}>
-            <img
-              src={person.image}
-              alt={`${person.name}`}
-              className={classes.image}
-            />
-            <div className={classes.textContent}>
-              <h2 className={classes.name}>{person.name}</h2>
-              <p className={classes.designation}>{person.designation}</p>
-              <p className={classes.message}>{person.message}</p>
-            </div>
+      {people.map((person, index) => (
+        <div key={index} className={classes.card}>
+          <div className={classes.imageContainer}>
+            <img src={person.image} alt={person.name} className={classes.image} />
+            <h2 className={classes.name}>{person.name}</h2>
+            <h3 className={classes.designation}>{person.designation}</h3>
           </div>
-        ))}
-      </div>
+          <div className={classes.textContainer}>
+            <p className={classes.message}>{person.message}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

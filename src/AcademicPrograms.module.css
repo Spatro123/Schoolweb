@@ -18,6 +18,8 @@
   font-size: 18px;
   color: #666;
   margin-bottom: 40px;
+ 
+  text-align: center;
 }
 
 .programList {
@@ -58,15 +60,16 @@
 .programDescription {
   font-size: 14px;
   color: #555;
-  flex-grow: 1; /* Allows description to take remaining space */
+  flex-grow: 1; 
   margin-bottom: 10px;
 }
 
 .programCategory {
   font-size: 14px;
   font-weight: 500;
-  color: #4CAF50;
+  color: var(--theme-color);
   margin-bottom: 15px;
+
 }
 
 .applyButton {
@@ -82,13 +85,15 @@
 }
 
 .applyButton:hover {
-  background-color: #e5533d;
+  background-color: #453de5;
 }
 
 .footerText {
   font-size: 16px;
   color: #666;
   margin-top: 40px;
+  /* border: 1px solid red; */
+  text-align: center;
 }
 
 .viewAllLink {

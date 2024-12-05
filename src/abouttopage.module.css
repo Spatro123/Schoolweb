@@ -1,6 +1,5 @@
 
 .aboutpage {
-    font-family: Arial, sans-serif;
     color: #333;
     background-color: #ffffff;
     padding: 20px;
@@ -33,6 +32,7 @@
     font-size: 3rem;
     color: white;
     font-weight: bold;
+    
   }
   
   .headertitle span {
@@ -40,16 +40,18 @@
   }
   
   .aboutsection {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
   .sectiontitle {
-    font-size: 2rem;
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
+    
+    width: 100%;
   }
   
   .highlight {
@@ -60,12 +62,12 @@
     display: flex;
     align-items: stretch; 
     margin-bottom: 30px;
-    gap: 20px;
+    gap: 10px;
   }
   
   .textContainer {
     flex: 1;
-    font-size: 0.95rem;
+    font-size: 16px;
     line-height: 1.6;
     color: #555;
     display: flex;

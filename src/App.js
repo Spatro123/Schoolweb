@@ -37,6 +37,7 @@ import Header1 from './Header1';
 import Virtualtour from './Virtualtour';
 import CampusLifePage from './Campuslife';
 import Recognitions from './Recogination';
+import Infrastructure from './Infrastructure';
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
         <Route path="/research" element={<ResearchPage />} /> 
         <Route path="/event" element={<EventPage />} /> 
         <Route path="/parenttestimonial" element={<Parenttestimonial />} /> 
+        <Route path="/infrastruture" element={<Infrastructure />} /> 
 
 
       </Routes>

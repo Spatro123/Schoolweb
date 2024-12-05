@@ -78,3 +78,73 @@
     font-weight: bold;
   }
   
+  
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+    height: 70vh;
+  }
+
+  .leftsection, .rightsection {
+    flex: 1; 
+    height: 60vh; 
+  }
+
+  .imagecontainer {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .subhead {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftsection, .rightsection {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust to content height */
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .subhead {
+    font-size: 20px;
+  }
+
+  .youtubeicon {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1.2rem; 
+  }
+
+  .subhead {
+    font-size: 18px;
+  }
+
+  .youtubeicon {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .imagecontainer {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}

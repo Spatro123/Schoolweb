@@ -1,98 +1,202 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.searchBar {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.noticeList {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  overflow-x: auto; /* Ensure content scrolls horizontally if it overflows */
+}
+
+.noticeRow {
+  display: flex;
+  flex-wrap: wrap; /* Allow rows to wrap on smaller screens */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.headerRow {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.noticeId, .noticeTitle, .noticeAction, .noticeDate {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.noticeTitle {
+  flex: 3;
+  text-align: center;
+}
+
+.noticeTitlesub {
+  text-align: left;
+  flex: 3;
+}
+
+.viewPdfButton {
+  padding: 6px 12px;
+  background-color: var(--theme-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.viewPdfButton:hover {
+  background-color: #0056b3;
+}
+
+.noResult {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  padding: 20px 0;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--theme-color);
+  color: #fff;
+}
+
+.pagination button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1024px) {
   .title {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 22px;
   }
   
   .searchBar {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 20px auto;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
   }
-  
-  .searchBar:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  .noticeTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
 
-  .noticeTable th,
-  .noticeTable td {
-    padding: 12px 15px;
-    text-align: left;
-    border: 1px solid #f0f0f0;
+  .noticeId, .noticeTitle, .noticeAction, .noticeDate {
+    font-size: 13px;
   }
-  
-  .noticeTable th {
-    background-color: #f8f9fa;
-    font-weight: bold;
-    color: #333;
+
+  .viewPdfButton {
+    font-size: 13px;
+    padding: 5px 10px;
   }
-  
-  .noticeTable tr:nth-child(even) {
-    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
-  
-  .noticeTable tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .noResult {
-    text-align: center;
-    font-size: 16px;
-    color: #999;
+
+  .contentWrapper {
     padding: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .searchBar {
-      width: 90%;
-      font-size: 14px;
-    }
-  
-    .noticeTable th,
-    .noticeTable td {
-      font-size: 14px;
-      padding: 10px;
-    }
+
+  .noticeRow {
+    flex-wrap: wrap; /* Wrap items in the row */
   }
-  
-  @media (max-width: 480px) {
-    .title {
-      font-size: 20px;
-    }
-  
-    .searchBar {
-      font-size: 12px;
-    }
-  
-    .noticeTable th,
-    .noticeTable td {
-      font-size: 12px;
-      padding: 8px;
-    }
+
+  .noticeId, .noticeTitle, .noticeAction, .noticeDate {
+    font-size: 12px;
   }
-  
+
+  .viewPdfButton {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .searchBar {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .searchBar {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .noticeId, .noticeTitle, .noticeAction, .noticeDate {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .viewPdfButton {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .noticeRow {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .pagination button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .pagination span {
+    font-size: 14px;
+  }
+}

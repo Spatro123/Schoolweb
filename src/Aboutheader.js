@@ -4,6 +4,7 @@ import classes from'./Aboutheader.module.css';
 const App = () => {
     return (
         <div className={classes.App}>
+            <h1>About  <span className={classes.highlight}>US</span></h1>
             <div className={classes.herosection}>
                 <div className={classes.overlay}>
                     <h1>WE CARE ABOUT YOUR <span className={classes.highlight}>CHILDREN</span></h1>

@@ -48,15 +48,15 @@ function App() {
           <p>• Gallery •</p>
         </div>
 
-        {/* Gallery Section */}
-        <div className={classes.gallerySection}>
-          <div className={classes.youtubeSection}>
+        <div className={classes.youtubeSection}>
             <p>Visit our YouTube Channel</p>
             <button className={classes.youtubeButton} onClick={handleYoutubeRedirect}>
               <img src={youtube} alt="YouTube Icon" className={classes.youtubeIcon} />
               YouTube
             </button>
           </div>
+        <div className={classes.gallerySection}>
+    
           <img src={image1} alt="Gallery Image 1" className={classes.galleryImage} />
           <img src={image2} alt="Gallery Image 2" className={classes.galleryImage} />
           <img src={image3} alt="Gallery Image 3" className={classes.galleryImage} />
