@@ -33,7 +33,7 @@
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 10px;
-  width: 400px;
+  width: 380px;
   min-height: 500px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +81,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  align-self: flex-start; /* Aligns button to the start of content */
+  align-self: flex-start; 
 }
 
 .applyButton:hover {
@@ -104,4 +104,48 @@
 
 .viewAllLink:hover {
   text-decoration: underline;
+}
+
+
+
+@media (min-width: 1440px) {
+  .programList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Maintain spacing between cards */
+  }
+
+  .programCard {
+    width: 100%; 
+    max-width: none; 
+  }
+  .programCard
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .programTitle {
+    font-size: 22px;
+  }
+
+  .programDescription {
+    font-size: 16px;
+  }
+
+  .programCategory {
+    font-size: 16px;
+  }
+
+  .applyButton {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .footerText {
+    font-size: 18px;
+  }
 }

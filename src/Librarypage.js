@@ -1,49 +1,189 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Library.module.css";
+import img1 from './bookcover.jpg';
+import img2 from "./bookcover.jpg";
+import img3 from "./bookcover.jpg";
+import img4 from "./bookcover.jpg";
+import friend from "./boy.png";
 
-function App() {
+const allBooksData = {
+  Home: [
+    { id: 5, title: "The Alchemist", author: "Paulo Coelho", image: img1, summary: "A magical fable about following your dreams." },
+    { id: 6, title: "Atomic Habits", author: "James Clear", image: img2, summary: "An easy way to build good habits and break bad ones." },
+    { id: 7, title: "Dune", author: "Frank Herbert", image: img3, summary: "A science fiction masterpiece about politics and power." },
+    { id: 8, title: "1984", author: "George Orwell", image: img4, summary: "A dystopian novel about surveillance and freedom." },
+    { id: 9, title: "Brave New World", author: "Aldous Huxley", image: img2, summary: "A chilling dystopian vision of the future." },
+  ],
+  Favorites: [{ id: 1, title: "Steve Jobs", author: "Walter Isaacson", image: img1, summary: "The inspiring biography of Steve Jobs." },
+    { id: 2, title: "Radical", author: "David Platt", image: img2, summary: "A call to reject materialism and embrace Jesus' teachings." },],
+  "Top Books": [
+    { id: 1, title: "Steve Jobs", author: "Walter Isaacson", image: img1, summary: "The inspiring biography of Steve Jobs." },
+    { id: 2, title: "Radical", author: "David Platt", image: img2, summary: "A call to reject materialism and embrace Jesus' teachings." },
+  ],
+  Discover: [
+    { id: 3, title: "Ender’s Game", author: "Orson Scott Card", image: img3, summary: "A young boy is trained to defend Earth in an intergalactic war." },
+    { id: 4, title: "The Hobbit", author: "J.R.R. Tolkien", image: img4, summary: "The tale of Bilbo Baggins' epic adventure." },
+  ],
+};
+
+const friends = [
+  { id: 1, name: "Neil Patrick Harris", status: "Fantasy Life" },
+  { id: 2, name: "Robert Downey, Jr.", status: "It’s Just a Good Day" },
+  { id: 3, name: "Russell Crowe", status: "This Town" },
+];
+
+const Library = () => {
+  const [allBooks, setAllBooks] = useState(allBooksData);
+  const [activeCategory, setActiveCategory] = useState("Home");
+  const [selectedBook, setSelectedBook] = useState(null);
+  const [showAllHomeBooks, setShowAllHomeBooks] = useState(false);
+  const [showAllRecommendedBooks, setShowAllRecommendedBooks] = useState(false);
+
+  const handleSidebarClick = (category) => {
+    setActiveCategory(category);
+  };
+
+  const handleBookClick = (book) => {
+    setSelectedBook(book);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedBook(null);
+  };
+
+  const handleLikeBook = (book) => {
+    setAllBooks((prev) => ({
+      ...prev,
+      Favorites: [...prev.Favorites, book],
+    }));
+    alert(`${book.title} added to Favorites!`);
+  };
+
   return (
-    <div className={classes.librarycontainer}>
-      <header className={classes.libraryheader}>
-        <h1>Library</h1>
+    <div className={classes.container}>
+      <header className={classes.header}>
+        <h1>LIBRARY</h1>
       </header>
-      <main className={classes.librarycontent}>
-        <section className={classes.librarysection}>
-          <h2>About Library</h2>
-          <ul>
-            <li>There is a large library hall in the school.</li>
-            <li>Students are encouraged to read books of their choice for pleasure and information.</li>
-            <li>Students from Std. I to V are made to read story books in the library only.</li>
-            <li>Students from Std. IV upwards are issued books.</li>
-            <li>Books once issued are to be properly cared for and returned within seven days of the date of issue.</li>
-            <li>A fine of Rs. 10/- is charged after the expiry of the due date when the book is deposited.</li>
-            <li>In case of loss or damage of books, double the price of the book is to be deposited.</li>
-            <li>No book is issued to students without the school diary.</li>
-            <li>Reference books and encyclopedias are meant for reading in the library only.</li>
-            <li>The library remains open from 7:30 a.m. to 1:30 p.m. on every working day.</li>
-          </ul>
-        </section>
-        <section className={classes.librarysection}>
-          <h2>Library Rules</h2>
-          <ul>
-            <li>Silence is a must in the library.</li>
-            <li>Books once issued are to be properly cared for and returned within seven days from the date of issue.</li>
-            <li>A fine of Rs. 10/- will be charged after the expiry of the due date if the book is not returned.</li>
-            <li>If the date of return happens to be a holiday, return the books on the next working day.</li>
-            <li>Absence is not an excuse for delay in return of the book.</li>
-            <li>In case of loss or damage of books, the cost of the book will be extracted from the student.</li>
-            <li>Any sort of marking on the book is strongly forbidden and violation in this regard will be fined.</li>
-            <li>Everyone should examine the books carefully at the time of issue of books and report to the librarian if there is any mark or damage.</li>
-            <li>One can borrow only one book at a time.</li>
-            <li>One-page summary of the book read is to be written by the student and submitted to the librarian.</li>
-            <li>Junior class children will be made to read story books in the library only.</li>
-            <li>Students are not allowed to bring their bags or personal belongings to the library.</li>
-            <li>Library cards must be maintained properly.</li>
-          </ul>
-        </section>
-      </main>
+      <div className={classes.content}>
+      <div className={classes.sidebar}>
+        <h3>Browse</h3>
+        <ul>
+          {Object.keys(allBooks).map((category) => (
+            <li
+              key={category}
+              className={activeCategory === category ? classes.active : ""}
+              onClick={() => handleSidebarClick(category)}
+            >
+              {category}
+            </li>
+          ))}
+        </ul>
+        <h3>Your Books</h3>
+        <ul>
+          <li>Reading</li>
+          <li>Favorite Reads</li>
+          <li>History</li>
+        </ul>
+        <h3>Shelves</h3>
+        <button>Create a Shelf</button>
+      </div>
+
+      <div className={classes.mainContent}>
+        <div className={classes.section}>
+          <h2>{activeCategory}</h2>
+          <div className={classes.booksGrid}>
+            {(showAllHomeBooks
+              ? allBooks.Home
+              : allBooks.Home.slice(0, 5)
+            ).map((book) => (
+              <div
+                key={book.id}
+                className={classes.bookCard}
+                onClick={() => handleBookClick(book)}
+              >
+                <img src={book.image} alt={book.title} />
+                <h4>{book.title}</h4>
+                <p>{book.author}</p>
+                <button
+                  className={classes.likeButton}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleLikeBook(book);
+                  }}
+                >
+                  ❤️ Like
+                </button>
+              </div>
+            ))}
+          </div>
+          {!showAllHomeBooks && (
+            <button
+              className={classes.viewAllButton}
+              onClick={() => setShowAllHomeBooks(true)}
+            >
+              View All
+            </button>
+          )}
+        </div>
+
+        <div className={classes.section}>
+          <h2>Recommended Books</h2>
+          <div className={classes.booksGrid}>
+            {(showAllRecommendedBooks
+              ? allBooks["Top Books"]
+              : allBooks["Top Books"].slice(0, 5)
+            ).map((book) => (
+              <div key={book.id} className={classes.bookCard}>
+                <img src={book.image} alt={book.title} />
+                <h4>{book.title}</h4>
+                <p>{book.author}</p>
+              </div>
+            ))}
+          </div>
+          {!showAllRecommendedBooks && (
+            <button
+              className={classes.viewAllButton}
+              onClick={() => setShowAllRecommendedBooks(true)}
+            >
+              View All
+            </button>
+          )}
+        </div>
+
+        <div className={classes.friendsSection}>
+          <h2>Your Friends</h2>
+          {friends.map((friendData) => (
+            <div key={friendData.id} className={classes.friend}>
+              <img src={friend} alt={friendData.name} />
+              <p>
+                {friendData.name} <br />
+                <small>{friendData.status}</small>
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {selectedBook && (
+        <div className={classes.modal} onClick={handleCloseModal}>
+          <div
+            className={classes.modalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3>{selectedBook.title}</h3>
+            <p>
+              <strong>Author:</strong> {selectedBook.author}
+            </p>
+            <p>{selectedBook.summary}</p>
+            <button className={classes.closeButton} onClick={handleCloseModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Library;
