@@ -1,15 +1,16 @@
 .coursespage {
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: Roboto;
   text-align: center;
-  max-width: 1200px; /* Set maximum width */
-  margin: 0 auto; /* Center content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .coursespage h1 {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: var(--theme-color);
+  text-align: center;
 }
 
 .coursespage p {
@@ -22,11 +23,12 @@
 .coursesgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  /* gap: 20px; */
   margin-top: 20px;
   position: relative;
   overflow: hidden;
   max-width: 100%; 
+  /* border: 1px solid red; */
 }
 
 .coursecard {
@@ -38,6 +40,7 @@
   opacity: 0;
   transform: translateX(100%);
   animation: slideIn 5s ease-in-out infinite;
+ 
 }
 
 @keyframes slideIn {
@@ -46,11 +49,11 @@
     opacity: 0;
   }
   25% {
-    transform: translateX(30px); /* Stay within the visible content space */
+    transform: translateX(30px); 
     opacity: 1;
   }
   75% {
-    transform: translateX(30px); /* Stay within the visible content space */
+    transform: translateX(30px); 
     opacity: 1;
   }
   100% {
@@ -84,10 +87,23 @@
   height: 200px;
   object-fit: cover;
 }
-
+.coursecontent{
+  display: grid;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
 .coursecontent {
   padding: 15px;
   text-align: left;
+  
+}
+.content{
+  /* border: 1px solid red; */
+}
+
+.btn{
+  /* border: 1px solid red; */
+
 }
 
 .coursecontent h3 {
@@ -103,6 +119,8 @@
   text-align: justify;
 }
 
+
+
 .applybutton {
   display: inline-block;
   padding: 10px 15px;
@@ -112,8 +130,53 @@
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+ 
 }
 
 .applybutton:hover {
   background-color: #006600;
+}
+
+
+@media (min-width: 1200px) {
+  .coursespage {
+    max-width: 1200px;
+    /* padding: 20px; */
+  }
+
+  .coursesgrid {
+    grid-template-columns: repeat auto-fit(300px, 1fr);
+    gap: 10px;
+  }
+
+  .courseimg {
+    height: 220px;
+  }
+
+  .coursecard {
+
+    max-width: 350px;
+  }
+
+  .coursespage h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--theme-color);
+    text-align: center;
+  }
+
+
+  .coursecontent p {
+    font-size: 16px;
+    text-align: justify;
+    
+  }
+  .coursecontent h3 {
+font-size: 20px;
+text-align: justify;
+  }
+
+  .applybutton{
+
+  }
 }

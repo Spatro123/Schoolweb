@@ -35,7 +35,6 @@ const Header1 = () => {
 
   return (
     <header className={classes.navbar}>
-      {/* Top Bar */}
       <div className={classes.topbar}>
         <div className={classes.contactInfo}>
           <div className={classes.info}>
@@ -91,23 +90,26 @@ const Header1 = () => {
           <div className={classes.hamburgerLine}></div>
         </div>
 
+
+        <button className={classes.closeButton} onClick={closeMenu}>
+            ✖
+          </button>
+
         <div
           className={`${classes.navListContent} ${
             isMenuOpen ? classes.active : ""
           }`}
         >
-          <button className={classes.closeButton} onClick={closeMenu}>
-            ✖
-          </button>
+         
           <Link
-            to="/"
+            to="/Home"
             className={isActive("/") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            Home
+            HOME
           </Link>
+          
 
-          {/* About Dropdown */}
           <div
             className={classes.dropdown}
             onMouseEnter={() => handleMouseEnter("about")}
@@ -119,7 +121,7 @@ const Header1 = () => {
                 isDropdownActive("/page2") ? classes.activeLink : ""
               }`}
             >
-              About <span className={classes.dropdownIndicator}>▼</span>
+              ABOUT <span className={classes.dropdownIndicator}>▼</span>
             </Link>
             {activeDropdown === "about" && (
               <div className={classes.dropdownMenu}>
@@ -153,7 +155,7 @@ const Header1 = () => {
                 isDropdownActive("/academicpage") ? classes.activeLink : ""
               }`}
             >
-              Academics <span className={classes.dropdownIndicator}>▼</span>
+              ACADEMICS <span className={classes.dropdownIndicator}>▼</span>
             </Link>
             {activeDropdown === "academics" && (
               <div className={classes.dropdownMenu}>
@@ -181,7 +183,7 @@ const Header1 = () => {
             className={isActive("/addmission") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            Admission
+            ADMISSION
           </Link>
 
           <Link
@@ -189,7 +191,7 @@ const Header1 = () => {
             className={isActive("/notices") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            Notices
+          NOTICES
           </Link>
 
           <div className={classes.dropdown}>
@@ -201,7 +203,7 @@ const Header1 = () => {
               onClick={closeMenu}
             >
               
-              Resources <span className={classes.dropdownIndicator}>▼</span>
+              RESOURCES <span className={classes.dropdownIndicator}>▼</span>
             </Link>
             <div className={classes.dropdownMenu}>
             <Link to="/infrastruture" onClick={closeMenu}>
@@ -226,7 +228,7 @@ const Header1 = () => {
             className={isActive("/gallery") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            Gallery
+            GALLARY
           </Link>
         
           <Link
@@ -234,7 +236,7 @@ const Header1 = () => {
             className={isActive("/contactus") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            Contact Us
+            COMTACT US
           </Link>
         </div>
 

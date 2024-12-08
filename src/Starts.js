@@ -9,6 +9,7 @@ import eventImg2 from "./school1.jpg";
 import eventImg3 from "./school1.jpg";
 import eventImg4 from "./school1.jpg";
 
+
 const newsItems = [
   {
     title: "Foundation Day Celebration of 16 States Held at Raj Bhavan, Odisha",

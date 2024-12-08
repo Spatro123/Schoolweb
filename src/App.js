@@ -38,14 +38,15 @@ import Virtualtour from './Virtualtour';
 import CampusLifePage from './Campuslife';
 import Recognitions from './Recogination';
 import Infrastructure from './Infrastructure';
-
+import Cta from "./ctabutton";
+import Resources from './Resources';
 
 function App() {
   return (
     <div className={classes.App}>
       <Header1 />
       <Routes>
-        <Route path="/" element={
+        <Route path="/Home" element={
           <>
             <Banner />
             <div className={classes.content}>
@@ -62,6 +63,7 @@ function App() {
             <ResearchSpotlight />
             {/* <Whyus /> */}
             <Start />
+            <Cta />
           </>
         } />
         <Route path="/page2" element={<Page2 />} />
@@ -84,6 +86,7 @@ function App() {
         <Route path="/event" element={<EventPage />} /> 
         <Route path="/parenttestimonial" element={<Parenttestimonial />} /> 
         <Route path="/infrastruture" element={<Infrastructure />} /> 
+        <Route path="/resources" element={<Resources />} /> 
 
 
       </Routes>

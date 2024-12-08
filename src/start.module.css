@@ -143,6 +143,24 @@
   margin: 0;
 }
 
+
+
+.cta{
+  
+  border: none;
+  background: transparent;
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  background-color: var(--theme-color);
+  width: 100%;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 10px;
+
+
+}
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .sectionheader {

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto";
   background-color: #f5f5f5;
 }
 
@@ -9,6 +9,7 @@ body {
   padding: 40px 20px;
   color: var(--theme-color);
   text-align: center;
+  
 }
 
 .statscontainer h2 {
@@ -19,12 +20,13 @@ body {
 
 .statsrow {
   display: flex;
-  justify-content: center; /* Center cards horizontally */
-  align-items: center; /* Center cards vertically */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 10px;
+ 
   padding-bottom: 10px;
-  width: 100%; /* Ensure it takes full width */
+  width: 100%; 
 }
 
 .statcard {
@@ -34,11 +36,10 @@ body {
   width: 100%;
   padding: 16px 24px;
   border-radius: 10px;
-  max-width: 200px; /* Fixed width for cards */
+  max-width: 200px; 
   text-align: center;
   border: 1px solid lightgray;
   
-  /* Box shadow for design */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -60,16 +61,15 @@ body {
   text-align: center;
 }
 
-/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
   .statsrow {
-    justify-content: center; /* Center cards on small screens */
-    gap: 10px; /* Smaller gap */
-    overflow-x: auto; /* Ensure scrolling for small screens */
+    justify-content: center; 
+    gap: 10px; 
+    overflow-x: auto;
   }
 
   .statcard {
-    max-width: 150px; /* Adjust card size */
+    max-width: 150px; 
   }
 
   .statcard h3 {
@@ -81,15 +81,15 @@ body {
   }
 }
 
-/* Responsive Design for Very Large Screens */
 @media (min-width: 1440px) {
   .statsrow {
-    gap: 40px; /* Increase gap for larger screens */
-    justify-content: center; /* Ensure cards remain centered */
+    gap: 40px; 
+    justify-content: center; 
+   
   }
 
   .statcard {
-    max-width: 240px; /* Larger cards for big screens */
+    max-width: 240px; 
   }
 
   .statcard h3 {

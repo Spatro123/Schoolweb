@@ -6,24 +6,26 @@
   
   .container {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    gap: 50px;
+    max-width: 1200px; /* Constrain width for larger screens */
+    width: 90%; /* Flexible width for smaller screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add consistent padding on the sides */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space between form and gallery sections */
+    flex-wrap: wrap;
   }
+
+
   .phonemockup h2{
     display: grid;
     text-align: center;
     font-size: 30px;
   }
-  .formsection {
-    width: 45%;
-    margin-bottom: 20px; 
- 
-  }
+.formsection {
+  width: 45%; /* Keep width consistent */
+  margin-bottom: 20px;
+}
+
   .subtext{
   
     text-align: center;
@@ -169,10 +171,11 @@
     padding: 20px; 
     justify-content: center; 
   }
-  
+
+
   .galleryImage {
-    width: calc(50% - 15px); 
-    height: 150px; 
+    width: calc(50% - 15px); /* Maintain consistent size for images */
+    height: 150px;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
@@ -237,17 +240,24 @@
     height: 20px;
     margin-right: 8px;
   }
-  
+
+
+  @media (min-width: 1200px) {
+  .container {
+    padding: 50px; 
+  }
+}
+
+
   @media (max-width: 768px) {
-    .formsection, .infosection {
-      width: 100%; 
-      padding: 0; 
-    }
-  
-    .container {
-      padding: 30px 10px; 
-    }
-  
+    .formsection,
+  .infosection {
+    width: 100%; 
+    padding: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
     .infoheader h1 {
       font-size: 1.8rem; 
     }
@@ -265,6 +275,7 @@
     .container {
       padding: 20px 10px; 
       flex-direction: column; 
+    
     }
   
     .formsection, .infosection {
@@ -273,11 +284,11 @@
       margin-bottom: 20px; 
     }
   
-    .form-content h2 {
+    .formcontent h2 {
       font-size: 1.3rem; 
     }
   
-    .form-content p {
+    .formcontent p {
       font-size: 0.8rem;
     }
   

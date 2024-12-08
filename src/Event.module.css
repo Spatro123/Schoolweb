@@ -6,6 +6,7 @@
   padding: 20px;
   text-align: center;
   font-size: 15px;
+ 
   max-width: 1400px;
 
 }
@@ -18,8 +19,8 @@
   font-weight: bold;
  
   width: 100%;
-  margin: 0 20px;
- 
+  /* margin: 0 20px; */
+  padding: 10px;
 }
 
 .head p {
@@ -52,15 +53,17 @@
   padding: 20px;
   text-align: center;
   font-size: 15px;
-  max-width: 1600px; 
+  
+  width: 100%;
+  
  
 }
 
 .cards {
   display: flex;
-  justify-content: space-between; /* Distribute space evenly */
-  flex-wrap: nowrap; /* Keep cards in one line */
-  gap: 20px; /* Space between cards */
+  justify-content: space-between; 
+  flex-wrap: nowrap; 
+  gap: 20px; 
   width: 100%;
   overflow-x: auto;
   padding: 0px 0;

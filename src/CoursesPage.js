@@ -48,14 +48,20 @@ function CoursesPage() {
           <div className={classes.coursecard} key={index}>
             <img src={course.img} alt={course.title} className={classes.courseimg} />
             <div className={classes.coursecontent}>
+
+              <div className={classes.content}>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
+              </div>
+
+              <div className={classes.btn}> 
               <p>
                 <strong>{course.year}</strong>
               </p>
               <a href={course.applyLink} target="_blank" rel="noopener noreferrer" className={classes.applybutton}>
                 Apply Now
               </a>
+              </div>
             </div>
           </div>
         ))}

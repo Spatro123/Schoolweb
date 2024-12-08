@@ -1,9 +1,11 @@
 .campusLifePage {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    /* padding: 20px; */
+  
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+   
+   
     
   }
   
@@ -11,23 +13,27 @@
     font-size: 30px;
     margin-bottom: 10px;
     color: var(--theme-color);
+    
   }
   
   .campusLifePage p {
     font-size: 20px;
     margin-bottom: 30px;
     color: #555;
+    text-align: center;
   }
   
   .activitiesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    /* gap: 10px; */
     position: relative;
     overflow: hidden;
     max-width: 100%;
+    
   }
+  
+ 
   
   .activityCard {
     background: #fff;
@@ -96,3 +102,33 @@
     text-align: justify;
   }
   
+@media (min-width: 1200px) {
+  .campusLifePage {
+      /* padding: 20px;  */
+      max-width: 1200px; 
+  }
+
+  .activitiesGrid {
+      /* gap: 10px;  */
+  }
+
+  .activityCard {
+    max-width: 350px; 
+  }
+
+  .activityImg {
+      height: 300px; 
+  }
+
+  .activityContent {
+      /* padding: 25px;  */
+  }
+
+  .activityContent h3 {
+      font-size: 24px;
+  }
+
+  .activityContent p {
+      font-size: 18px; 
+  }
+}
