@@ -10,12 +10,14 @@
   background-color: #483D8B;
   color: white;
   padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .contactInfo {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .contactInfo img {
@@ -23,10 +25,22 @@
   height: 20px;
 }
 
-.socialIcons img {
-  width: 25px;
-  margin-left: 15px;
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   cursor: pointer;
+}
+
+.socialIcons a img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s ease;
+}
+
+.socialIcons a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .loginButton {
@@ -46,10 +60,16 @@
   justify-content: space-between;
   padding: 20px;
   background-color: #f4f4f4;
+  flex-wrap: wrap;
 }
 
 .logo {
   width: 100px;
+}
+
+.instituteInfo {
+  flex-grow: 1;
+  padding-left: 20px;
 }
 
 .instituteInfo h1 {
@@ -70,6 +90,12 @@
   padding: 10px 15px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.admissionButton:hover {
+  background-color: #483D8B;
+  color: white;
 }
 
 .navBar {
@@ -84,26 +110,36 @@
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navBar ul li {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 .navBar ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navBar ul li a:hover {
+  color: #FFD700;
 }
 
 .newsUpdates {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   background-color: #f4f4f4;
+  flex-wrap: wrap;
 }
 
 .newsUpdates span {
   font-weight: bold;
+  color: #483D8B;
 }
 
 .newsUpdates p {
@@ -116,4 +152,10 @@
   color: #483D8B;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.viewAllButton:hover {
+  color: #000080;
 }

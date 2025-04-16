@@ -2,72 +2,38 @@ import React, { useState } from 'react';
 import classes from './Programme.module.css';
 
 const programCategories = {
-  UG: [
-    "B. Tech in Computer Science & Engineering",
-    "B. Tech in Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
-    "B. Tech in Computer Science and Engineering (IoT)",
-    "B. Tech in Computer Science and Engineering (Data Science)",
-    "B. Tech in Computer Science and Technology",
-    "B. Tech in Agricultural Engineering",
-    "B. Tech in Mechanical Engineering",
-    "B. Tech in Biotechnology",
-    "B. Tech in Chemical Engineering",
-    "B. Tech in Civil Engineering",
-    "B. Tech in Electrical Engineering",
-    "B. Tech in Electrical and Electronics Engineering",
-    "B. Tech in Electronics and Communication Engineering",
-    "B. Tech. in Electronics Engineering (VLSI Design and Technology)",
-    "B. Tech. in Electronics & Communication (Advanced Communication Technology)",
-    "B.Sc. (Hons.) Agriculture",
-    "Bachelor of Business Administration (BBA)",
-    "Bachelor of Computer Applications (BCA)",
-    "B.Sc in Nursing",
+  "10th": [
+    "CBSE 10th Standard Full Course (Maths, Science, SST, English, Hindi)",
+    "ICSE 10th Standard Subject-wise Preparation",
+    "Foundation Course for NTSE, Olympiads & Entrance Exams",
+    "Doubt Solving & Concept Strengthening Sessions",
+    "Mock Tests & Board-Centric Practice Papers"
   ],
-  PG: [
-    "Master of Business Administration (MBA)",
-    "M. Tech in Computer Science & Engineering",
-    "M. Tech in Manufacturing Technology",
-    "M. Tech in Heat Power and Thermal Engineering",
-    "M. Tech in Machine Design",
-    "M. Tech in Biotechnology",
-    "M. Tech in Chemical Engineering",
-    "M. Tech in Structural Engineering",
-    "M. Tech in Construction Technology & Management",
-    "M. Tech in Power Electronics",
-    "M. Tech in Electronics & Communication Engineering",
-    "M. Tech. in Electronics & Communication (Advanced Communication Technology)",
-    "M. Tech. in Electronics & Communication (VLSI Design)",
-    "Master of Computer Applications (MCA)",
-    "M.Sc in Physics",
-    "M.Sc in Chemistry",
-    "M.Sc in Mathematics",
-    "M.Sc in Life Science",
-    "M.Sc in Biotechnology",
-    "M.A. in English",
-    "M.A. in Economics",
+  "12th": [
+    "CBSE 12th Science Stream (Physics, Chemistry, Maths/Biology)",
+    "ICSE/State Board 12th Grade Comprehensive Program",
+    "Crash Course for Board Exams with Test Series",
+    "Concept Enhancement and Problem-Solving Workshops",
+    "Live Doubt Clearing + Assignment Support"
   ],
-  Doctoral: [
-    "Ph.D. in Physics",
-    "Ph.D. in Chemistry",
-    "Ph.D. in Mathematics",
-    "Ph.D. in Biotechnology",
-    "Ph.D. in Computer Science and Engineering",
-    "Ph.D. in Computer Science and Application",
-    "Ph.D. in Mechanical Engineering",
-    "Ph.D. in Chemical Engineering",
-    "Ph.D. in Electronics & Communication Engineering",
-    "Ph.D. in Civil Engineering",
-    "Ph.D. in Electrical and Electronics Engineering",
-    "Ph.D. in Management",
-    "Ph.D. (Agriculture)",
-    "Ph.D. in Biotechnology",
-    "Ph.D. in Zoology",
-    "Ph.D. in Botany",
+  "JEE (OJEE)": [
+    "2-Year JEE Main & Advanced Program",
+    "1-Year JEE Crash Course",
+    "JEE Foundation for Class 11 & 12",
+    "Regular Mock Tests with Performance Analysis",
+    "Topic-wise Conceptual Lectures with Practice Sets"
   ],
+  "NEET": [
+    "2-Year NEET Long-Term Program",
+    "1-Year NEET Crash Course",
+    "Physics, Chemistry & Biology Deep Dive Sessions",
+    "NEET Mock Tests + Previous Year Solved Papers",
+    "Daily Practice Problems (DPP) and Doubt Clarification"
+  ]
 };
 
 const AcademicPrograms = () => {
-  const [selectedCategory, setSelectedCategory] = useState("UG");
+  const [selectedCategory, setSelectedCategory] = useState("10th");
 
   return (
     <div className={classes.academicPrograms}>
@@ -81,7 +47,7 @@ const AcademicPrograms = () => {
             className={`${classes.tabButton} ${selectedCategory === category ? classes.activeTab : ''}`}
             onClick={() => setSelectedCategory(category)}
           >
-            {category} Programs
+            {category}
           </button>
         ))}
       </div>

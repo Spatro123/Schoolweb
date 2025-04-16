@@ -17,9 +17,9 @@ const Footer = () => {
       <div className={classes.container}>
         {/* Logo and description */}
         <div className={classes.section1}>
-          <img src={logo} alt="Ruchika School Logo" className={classes.logoImage} />
+          <img src={logo}className={classes.logoImage} />
           <p className={classes.description}>
-            Founded in 1978, we are the best ICSE school in Odisha’s capital, Bhubaneswar. We celebrate every child’s voice, nurture every idea, and fuel every child’s dream.
+            Founded in 2017, Bhubaneswar. We celebrate every child’s voice, nurture every idea, and fuel every child’s dream.
           </p>
         </div>
 
@@ -68,19 +68,19 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Contact information */}
       <div className={classes.contactInfo}>
         <div className={classes.contact}>
           <img src={location} alt="Location" className={classes.contactIcon} />
-          <p>123 Bhubaneswar, Odisha, India</p>
+          <p>K6, Kalinga Vihar, Odisha, India</p>
         </div>
         <div className={classes.contact}>
           <img src={call} alt="Phone" className={classes.contactIcon} />
-          <p>+91-123-456-7890</p>
+          <p>+91-7848026406</p>
+          <p>+91-9078103676</p>
         </div>
         <div className={classes.contact}>
           <img src={feedback} alt="Feedback" className={classes.contactIcon} />
-          <p>feedback@ruchikaschool.com</p>
+          <p>info@etclasses.com</p>
         </div>
       </div>
 

@@ -1,29 +1,38 @@
 import React from 'react';
 import classes from './AcademicPrograms.module.css';
-import schoolImage1 from './old-masters-picture-gallery-dresden-night.jpg';
-import schoolImage2 from './Graduatio.jpg';
+import schoolImage1 from './Etpic1.JPG';
+import schoolImage2 from './Etpic8.JPG';
 import AcademicProgram from './Programme';
+import schoolimage3 from "./Etpic7.JPG"
 
 const programs = [
-  {
-    title: "Major in Economics",
-    description: "The Economics Major can be combined with a Major in another subject in order to obtain a Double Major Degree.",
-    category: "Economics",
-    image: schoolImage1, // Use the imported image variable directly
-  },
-  {
-    title: "Business Media",
-    description: "The Economics Major can be combined with a Major in another subject in order to obtain a Double Major Degree.",
-    category: "Business & Administration",
-    image: schoolImage2, // Use another imported image variable
-  },
-  {
-    title: "Business Media",
-    description: "The Economics Major can be combined with a Major in another subject in order to obtain a Double Major Degree.",
-    category: "Sciences",
-    image: schoolImage1, // Reuse the first image for this example
-  },
-];
+  
+    {
+      title: "10th Grade Foundation Program",
+      description: "A comprehensive program covering all major subjects to build a strong foundation for board exams and future competitive tests.",
+      category: "School Education",
+      image: schoolImage1,
+    },
+    {
+      title: "12th Grade Science Preparation",
+      description: "Targeted learning for Physics, Chemistry, and Biology/Maths to excel in board exams and get ready for competitive entrances.",
+      category: "School Education",
+      image: schoolImage2,
+    },
+    {
+      title: "JEE (Main & Advanced) Coaching",
+      description: "Rigorous training in Physics, Chemistry, and Mathematics to crack JEE with expert mentors, mock tests, and performance tracking.",
+      category: "Engineering Entrance",
+      image: schoolImage1,
+    },
+    // {
+    //   title: "NEET Preparation Course",
+    //   description: "Focused coaching for NEET aspirants with deep conceptual learning, regular practice, and doubt-clearing sessions.",
+    //   category: "Medical Entrance",
+    //   image: schoolImage1,
+    // }
+  ];
+  
 
 const AcademicPrograms = () => {
   return (

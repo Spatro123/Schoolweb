@@ -5,6 +5,11 @@ import schoolImage2 from "./Graduatio.jpg";
 import image1 from "./img3.jpg";
 import image2 from "./img4.jpg";
 import people from "./prof.png";
+import ppl from "./Baishali.jpeg";
+import ppl1 from "./Sritikirti.jpeg"
+import ppl2 from "./Himansu.jpeg"
+import ppl3 from "./Anjan.jpeg"
+import ppl4 from "./Prabhu.jpeg"
 
 const ResearchPage = () => {
   return (
@@ -42,22 +47,34 @@ const ResearchPage = () => {
         <h2>People</h2>
         <div className={classes.cardContainer}>
           <div className={classes.card}>
-            <img src={people} alt="Prof. Mrutyunjay Suar" className={classes.profImage} />
-            <h3>Prof. Mrutyunjay Suar</h3>
-            <p>Director General R&D and Innovation</p>
-            <p>Email: msuar@kiitbiotech.ac.in</p>
+            <img src={ppl} alt="Prof. Mrutyunjay Suar" className={classes.profImage} />
+            <h3>Baishali Pattnaik</h3>
+            <p>Chemistry</p>
+            {/* <p>Email: msuar@kiitbiotech.ac.in</p> */}
           </div>
           <div className={classes.card}>
-            <img src={people} alt="Prof. Ashok K. Sahoo" className={classes.profImage} />
-            <h3>Prof. Ashok K. Sahoo</h3>
-            <p>Director, R&D Technology</p>
-            <p>Email: asahoofme@kiit.ac.in</p>
+            <img src={ppl1} alt="Prof. Ashok K. Sahoo" className={classes.profImage} />
+            <h3>Sritikirti Mishra</h3>
+            <p>Biology</p>
+            {/* <p>Email: asahoofme@kiit.ac.in</p> */}
           </div>
           <div className={classes.card}>
-            <img src={people} alt="Dr. Gopal Chandra Kundu" className={classes.profImage} />
-            <h3>Dr. Gopal Chandra Kundu</h3>
-            <p>Director, R&D</p>
-            <p>Email: gopalc.kundu@kiit.ac.in</p>
+            <img src={ppl2} alt="Dr. Gopal Chandra Kundu" className={classes.profImage} />
+            <h3>Himansu Sekhar Pradhan</h3>
+            <p>Mathematics & Physics</p>
+            {/* <p>Email: gopalc.kundu@kiit.ac.in</p> */}
+          </div>
+          <div className={classes.card}>
+            <img src={ppl3} alt="Dr. Gopal Chandra Kundu" className={classes.profImage} />
+            <h3>Anjan Satapathy</h3>
+            <p>Mathematics</p>
+            {/* <p>Email: gopalc.kundu@kiit.ac.in</p> */}
+          </div>
+          <div className={classes.card}>
+            <img src={ppl4} alt="Dr. Gopal Chandra Kundu" className={classes.profImage} />
+            <h3>Prabhu Prasad Natak</h3>
+            <p>Mathematics</p>
+            {/* <p>Email: gopalc.kundu@kiit.ac.in</p> */}
           </div>
         </div>
       </section>

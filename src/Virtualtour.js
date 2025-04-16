@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Virtualtour.module.css"; 
 import Youtube from './youtube.png';
-import img from './school.jpg'; 
+import img from './Stu1.JPG'; 
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
         <div className={classes.quote}>Education is the key to unlocking the world, a passport to freedom.
 
 </div>
-<div className={classes.subhead}>Dr. APJ Abdul Kalam</div>
+{/* <div className={classes.subhead}>Dr. APJ Abdul Kalam</div> */}
       </div>
 
       {/* Right Section */}

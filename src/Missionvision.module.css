@@ -9,6 +9,9 @@
   .sectionwhyus {
     padding: 2rem 5%;
     text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 10px;
   }
   
   .sectionmission h2,
@@ -16,10 +19,16 @@
   .sectionwhyus h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+   
+  }
+  .sectionmission p,
+  .sectionvision p{
+    /* border: 1px solid red; */
+    text-align: center;
   }
   
   .highlight {
-    color: #ff6347; /* Highlight color */
+    color: #ff6347;
   }
   
   .mission p,
@@ -28,6 +37,8 @@
     max-width: 800px;
     margin: 0 auto 2rem auto;
     font-size: 1rem;
+    text-align: center;
+
   }
   
   .imagegrid {
@@ -55,13 +66,24 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+ 
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem 5%;
+  }
+  .feature {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
   
-  .feature {
-    max-width: 300px;
-    text-align: left;
-    margin: 1rem 0;
-  }
   
   .feature h3 {
     font-size: 1.2rem;

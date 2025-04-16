@@ -39,21 +39,41 @@ const Header1 = () => {
         <div className={classes.contactInfo}>
           <div className={classes.info}>
             <img src={contact} alt="Contact" className={classes.icon} />
-            <span>+91-1234567890</span>
+            <span>+91-9078103676</span>
+            <span>+91-7848026406</span>
           </div>
           <div className={classes.info}>
             <img src={mail} alt="Mail" className={classes.icon} />
-            <span>info@institute.edu</span>
+            <span>info@etclasses.com</span>
           </div>
         </div>
         <div className={classes.topheadright}>
           <div className={classes.socialIcons}>
-            <img src={facebook} alt="Facebook" className={classes.icon} />
+            <a
+              href="https://www.facebook.com/profile.php?id=61575073175798"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} alt="Facebook" className={classes.icon} />
+            </a>
             <img src={twitter} alt="Twitter" className={classes.icon} />
             <img src={linkedin} alt="LinkedIn" className={classes.icon} />
-            <img src={instagram} alt="Instagram" className={classes.icon} />
-            <img src={youtube} alt="YouTube" className={classes.icon} />
+            <a
+              href="https://www.instagram.com/et_classes?utm_source=qr&igsh=aWlmbWtwbms1bTQ3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} alt="Instagram" className={classes.icon} />
+            </a>
+            <a
+              href="https://youtube.com/@etcmedia?si=QUWoIlAOn9frtEtm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={youtube} alt="YouTube" className={classes.icon} />
+            </a>
           </div>
+
           <div className={classes.dasho}>
             <img src={account} alt="Profile" className={classes.account} />
             <a
@@ -71,7 +91,18 @@ const Header1 = () => {
       {/* Navbar */}
       <div className={classes.navbarcontainer}>
         <div className={classes.navbarlogo}>
-          <img src={logo} alt="Institute Logo" className={classes.navbarlogoimage} />
+          <Link to="/Home" className={classes.navbarlogo} onClick={closeMenu}>
+            <img
+              src={logo}
+              alt="Institute Logo"
+              className={classes.navbarlogoimage}
+            />
+            <div className={classes.navbartitle}>
+              <h1>ESSENTIAL CLASSES</h1>
+              <p>INNOVATION . INSPIRE . EDUCATE</p>
+            </div>
+          </Link>
+
           <div className={classes.navbartitle}>
             <h1>ESSENTIAL CLASSES</h1>
             <p>INNOVATION . INSPIRE . EDUCATE</p>
@@ -90,25 +121,20 @@ const Header1 = () => {
           <div className={classes.hamburgerLine}></div>
         </div>
 
+        <div className={`${classes.navListContent} ${isMenuOpen ? classes.active : ""}`}>
+  <button className={classes.closeButton} onClick={closeMenu}>
+    ✖
+  </button>
 
-        <button className={classes.closeButton} onClick={closeMenu}>
-            ✖
-          </button>
-
-        <div
-          className={`${classes.navListContent} ${
-            isMenuOpen ? classes.active : ""
-          }`}
-        >
-         
           <Link
             to="/Home"
-            className={isActive("/") ? classes.activeLink : ""}
+            className={`${classes.navLink} ${
+              isActive("/Home") ? classes.activeLink : ""
+            }`}
             onClick={closeMenu}
           >
             HOME
           </Link>
-          
 
           <div
             className={classes.dropdown}
@@ -125,20 +151,22 @@ const Header1 = () => {
             </Link>
             {activeDropdown === "about" && (
               <div className={classes.dropdownMenu}>
-                <Link to="/page2" onClick={closeMenu}>
+                {/* <Link to="/page2" onClick={closeMenu}>
                   About Us
                 </Link>
-               
+
                 <Link to="/history" onClick={closeMenu}>
                   History
-                </Link>
+                </Link> */}
                 <Link to="/missionvission" onClick={closeMenu}>
                   Mission & Vision
                 </Link>
                 <Link to="/welcomecard" onClick={closeMenu}>
                   About Founder
                 </Link>
-
+                <Link to="/faculty" onClick={closeMenu}>
+                  Our Faculties
+                </Link>
               </div>
             )}
           </div>
@@ -165,12 +193,12 @@ const Header1 = () => {
                 <Link to="/rulesandregulations" onClick={closeMenu}>
                   Rules & Regulations
                 </Link>
-                <Link to="/library" onClick={closeMenu}>
+                {/* <Link to="/library" onClick={closeMenu}>
                   Library
                 </Link>
                 <Link to="/studentlife" onClick={closeMenu}>
                   Special Activities
-                </Link>
+                </Link> */}
                 <Link to="/event" onClick={closeMenu}>
                   Event
                 </Link>
@@ -191,7 +219,7 @@ const Header1 = () => {
             className={isActive("/notices") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-          NOTICES
+            NOTICES
           </Link>
 
           <div className={classes.dropdown}>
@@ -202,22 +230,21 @@ const Header1 = () => {
               }`}
               onClick={closeMenu}
             >
-              
               RESOURCES <span className={classes.dropdownIndicator}>▼</span>
             </Link>
             <div className={classes.dropdownMenu}>
-            <Link to="/infrastruture" onClick={closeMenu}>
-              Infrastruture{" "}
-              </Link>
+              {/* <Link to="/infrastruture" onClick={closeMenu}>
+                Infrastruture{" "}
+              </Link> */}
               <Link to="/news-page" onClick={closeMenu}>
                 News
               </Link>
               <Link to="/event" onClick={closeMenu}>
                 Event
               </Link>
-             <Link to="/research" onClick={closeMenu}>
-                  Research
-                </Link>
+              {/* <Link to="/research" onClick={closeMenu}>
+                Research
+              </Link> */}
               <Link to="/article" onClick={closeMenu}>
                 Article{" "}
               </Link>
@@ -230,33 +257,30 @@ const Header1 = () => {
           >
             GALLARY
           </Link>
-        
+
           <Link
             to="/contactus"
             className={isActive("/contactus") ? classes.activeLink : ""}
             onClick={closeMenu}
           >
-            COMTACT US
+            CONTACT US
           </Link>
         </div>
-
-
       </nav>
+
       <div className={classes.newsUpdates}>
         <span>News Updates: </span>
         <div className={classes.scrollText}>
           <p>
-            Important Notice: Admission at Rajagiri is managed by the admissions
-            office. | Upcoming events: Faculty Development Program, ICSD
-            Biennial Conference.
+            Important Notice: Admission at Essential Tutorials is managed by the
+            admissions office. | Upcoming events: Faculty Development Program,
+            ICSD Biennial Conference.
           </p>
         </div>
         <Link to="/notices">
-      <button className={classes.viewallbtn}>View All</button>
-    </Link>
+          <button className={classes.viewallbtn}>View All</button>
+        </Link>
       </div>
-
-
     </header>
   );
 };

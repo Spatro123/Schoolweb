@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Wordfromfounder.module.css";
-import image from "./Trushan.png"; 
+import image from "./jog.png"; 
 
 const WelcomeCard = () => {
   return (
@@ -10,10 +10,10 @@ const WelcomeCard = () => {
       </div>
       <div className={classes.textContainer}>
         <h1 className={classes.title}>Founder</h1>
-        {/* Founder Info Block */}
         <div className={classes.founderInfo}>
-          <h2 className={classes.founderName}>TrushanK Lohar</h2>
-          <p className={classes.founderQualification}>B.Tech in Computer Science</p>
+          <h2 className={classes.founderName}>Jogendra Das</h2>
+          <p className={classes.founderQualification}>MA in English
+          PGDTE  , English Language Teaching Institute (ELTI), Bhubaneswar</p>
           <p className={classes.founderAwards}>
             <strong>Awards & Recognition:</strong> Best Innovator 2023, Top 10 Tech Leaders
           </p>
@@ -27,14 +27,15 @@ const WelcomeCard = () => {
         <div className={classes.messageContainer}>
           <h3>Message from the Founder</h3>
           <p className={classes.description}>
-            EProf Trushank Lohar life story reads like a powerful saga of grit, determination, and social responsibility. Born and brought up in poverty in a remote village in Odisha,  
-             a struggle for food and education for 15 long years. However, he persevered, and at the age of 22, joined teaching. At 25, he embarked on a journey that would change his own life, and the lives of thousands of people.
-             With just Rs 5000 in his pocket, he started this Institute  in two rented houses.
+            I Really feel privileged to share the objective with which Essential Tutorial Classes (ETC) came into being. We, at etc, are constantly striking to foster an environmental where learning flourishes naturally .
+            We believe in the prospects of education that enable the young minds to shape and cope with the changing scenario and assert themselves by exploring  the range of their knowledge and competence consistantly . 
+            We encourage the young minds to develop anallytical ben of mind , deliver deep into the concepts , become creative and confident by utiliation their potential to the zenith . We do not restrict the young minds by imposing learning but develop the learning aptitute.
+            There in we different from other working in this sphere.  
           </p>
         </div>
-        <p className={classes.credit}>
+        {/* <p className={classes.credit}>
           Images from <a href="https://freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
-        </p>
+        </p> */}
         <button className={classes.button}>Learn More</button>
       </div>
     </div>

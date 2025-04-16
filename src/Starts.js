@@ -1,57 +1,57 @@
 import React from "react";
 import classes from "./start.module.css";
-import img1 from "./school.jpg";
-import img2 from "./school1.jpg";
-import img3 from "./school1.jpg";
-import img4 from "./school.jpg";
-import eventImg1 from "./school.jpg";
-import eventImg2 from "./school1.jpg";
-import eventImg3 from "./school1.jpg";
-import eventImg4 from "./school1.jpg";
+import img1 from "./Etc1.JPG";
+import img2 from "./Etpic2.JPG";
+import img3 from "./Etpic1.JPG";
+import img4 from "./Banner7.JPG";
+import eventImg1 from "./Etpic4.JPG";
+import eventImg2 from "./Stu.JPG";
+import eventImg3 from "./Etpic5.JPG";
+import eventImg4 from "./Stu3.JPG";
 
 
 const newsItems = [
   {
-    title: "Foundation Day Celebration of 16 States Held at Raj Bhavan, Odisha",
-    date: "November 14th, 2024",
+    title: "Essential Tutorials Launches New AI-Powered Learning Platform",
+    date: "March 20, 2025",
     image: img1,
   },
   {
-    title: "KIMS Installs Odisha's First 3D Digital Mammography Machine",
-    date: "November 14th, 2024",
+    title: "Students from ET Win Gold in National Science Olympiad",
+    date: "March 15, 2025",
     image: img2,
   },
   {
-    title: "MSME and StartUp Trade Fair 2024 Begins at KIIT Campus",
-    date: "November 14th, 2024",
+    title: "Essential Tutorials Celebrates Annual Day with Cultural Fest",
+    date: "February 28, 2025",
     image: img3,
   },
   {
-    title: "YRC KIIT Organizes Awareness on AIDS and HIV Awareness",
-    date: "November 11th, 2024",
+    title: "Essential Students Secure Top Ranks in Board Exams 2024",
+    date: "February 10, 2025",
     image: img4,
   },
 ];
 
 const events = [
   {
-    title: "40th International Value Engineering Conference",
-    date: "November 15 @ 8:00 AM - November 16 @ 5:00 PM IST",
+    title: "Live Webinar: Cracking NTSE & Olympiads with Strategy",
+    date: "April 20 @ 6:00 PM IST",
     image: eventImg1,
   },
   {
-    title: "7th KIIT Mock Trial Competition (KMTC) 2024",
-    date: "November 22 - November 24",
+    title: "Parent-Teacher Meet (Academic Year Review)",
+    date: "April 25, 2025",
     image: eventImg2,
   },
   {
-    title: "IEEE 4th International Conference on Signal Processing",
-    date: "November 29 @ 6:00 AM - December 30 @ 5:00 PM IST",
+    title: "Essential Coding Carnival: Code & Win",
+    date: "May 5 @ 10:00 AM - 5:00 PM IST",
     image: eventImg3,
   },
   {
-    title: "ICAMME 2024 - Advances in Material and Manufacturing",
-    date: "December 14th - December 16th, 2024",
+    title: "ET Entrance Exam 2025 for New Admissions",
+    date: "May 15 - May 20, 2025",
     image: eventImg4,
   },
 ];
@@ -59,15 +59,14 @@ const events = [
 const App = () => {
   return (
     <div className={classes.app}>
-    <header className={classes.mainheader}>
-        <h1>News & Events</h1>
+      <header className={classes.mainheader}>
+        <h1>Essential Tutorials - News & Events</h1>
       </header>
+
       <section className={classes.eventssection}>
         <div className={classes.sectionheader}>
-          <h2>Events</h2>
-          <a href="/event" className={classes.viewall}>
-            View All Events
-          </a>
+          <h2>Upcoming Events</h2>
+          <a href="/event" className={classes.viewall}>View All Events</a>
         </div>
         <div className={classes.eventsgrid}>
           {events.map((event, index) => (
@@ -79,13 +78,11 @@ const App = () => {
           ))}
         </div>
       </section>
-      
+
       <section className={classes.newssection}>
         <div className={classes.sectionheader}>
-          <h2>News</h2>
-          <a href="/news-page" className={classes.viewall}>
-            View All News
-          </a>
+          <h2>Latest News</h2>
+          <a href="/news-page" className={classes.viewall}>View All News</a>
         </div>
         <div className={classes.newscards}>
           {newsItems.map((news, index) => (
@@ -97,8 +94,6 @@ const App = () => {
           ))}
         </div>
       </section>
-
-
     </div>
   );
 };

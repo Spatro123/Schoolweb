@@ -2,32 +2,33 @@
 import React from "react";
 import classes from "./Result.module.css";
 import StudentCard from "./Studentcard";
+import img from "./topper.jpeg"
 
 const App = () => {
   // Data for students
   const classXStudents = [
-    { name: "AYUSH", percentage: "99%" },
-    { name: "ANKIT", percentage: "99%" },
-    { name: "ASHIS", percentage: "98.8%" },
-    { name: "SAIRUP", percentage: "98%" },
-    { name: "TANNISHTHA", percentage: "98%" },
-    { name: "ANSUMAN", percentage: "97.8%" },
-    { name: "JIGYANSHA", percentage: "97.8%" },
-    { name: "SASWAT", percentage: "97.4%" },
-    { name: "SASWATI", percentage: "97.4%" },
-    { name: "JIGYANSU", percentage: "97.4%" },
+    { name: "Baishnavi", percentage: "91.6%" },
+    // { name: "ANKIT", percentage: "99%" },
+    // { name: "ASHIS", percentage: "98.8%" },
+    // { name: "SAIRUP", percentage: "98%" },
+    // { name: "TANNISHTHA", percentage: "98%" },
+    // { name: "ANSUMAN", percentage: "97.8%" },
+    // { name: "JIGYANSHA", percentage: "97.8%" },
+    // { name: "SASWAT", percentage: "97.4%" },
+    // { name: "SASWATI", percentage: "97.4%" },
+    // { name: "JIGYANSU", percentage: "97.4%" },
   ];
 
   const classXIIStudents = [
-    { name: "RONIT", percentage: "99.2%" },
-    { name: "SWAYAMSHREE", percentage: "98.6%" },
-    { name: "DIVYAANSHU", percentage: "97.4%" },
-    { name: "SATYENDU", percentage: "97.4%" },
-    { name: "ANUPRASH", percentage: "97%" },
-    { name: "SUNISTA", percentage: "97%" },
-    { name: "DEVANSHI", percentage: "96.8%" },
-    { name: "ANIRBAN", percentage: "96.2%" },
-    { name: "SAI KRISHNA", percentage: "96.2%" },
+    // { name: "RONIT", percentage: "99.2%" },
+    // { name: "SWAYAMSHREE", percentage: "98.6%" },
+    // { name: "DIVYAANSHU", percentage: "97.4%" },
+    // { name: "SATYENDU", percentage: "97.4%" },
+    // { name: "ANUPRASH", percentage: "97%" },
+    // { name: "SUNISTA", percentage: "97%" },
+    // { name: "DEVANSHI", percentage: "96.8%" },
+    // { name: "ANIRBAN", percentage: "96.2%" },
+    // { name: "SAI KRISHNA", percentage: "96.2%" },
   ];
 
   return (
@@ -38,7 +39,8 @@ const App = () => {
       </header>
 
       <section className={classes.section}>
-        <h2>Class X</h2>
+        <h2>Class X </h2>
+        <h3>ICSE Topper </h3>
         <div className={classes.studentgrid}>
           {classXStudents.map((student, index) => (
             <StudentCard key={index} student={student} />
@@ -46,14 +48,14 @@ const App = () => {
         </div>
       </section>
 
-      <section className={classes.section}>
+      {/* <section className={classes.section}>
         <h2>Class XII</h2>
         <div className={classes.studentgrid}>
           {classXIIStudents.map((student, index) => (
             <StudentCard key={index} student={student} />
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

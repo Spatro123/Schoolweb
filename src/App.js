@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Banner from './Banner';
@@ -40,8 +40,12 @@ import Recognitions from './Recogination';
 import Infrastructure from './Infrastructure';
 import Cta from "./ctabutton";
 import Resources from './Resources';
+import Faculty from './Faculty';
+import AboutPage from './Abouttoppage';
 
 function App() {
+  const [selected,setSelected] = useState("Home");
+  
   return (
     <div className={classes.App}>
       <Header1 />
@@ -57,16 +61,19 @@ function App() {
             <PrincipalFounder />
             <CoursesPage />
             <Virtualtour />
+            <Result />
             <CampusLifePage />
             <Recognitions />
             <Parenttestimonial />
-            <ResearchSpotlight />
+            {/* <ResearchSpotlight /> */}
             {/* <Whyus /> */}
             <Start />
             <Cta />
           </>
         } />
         <Route path="/page2" element={<Page2 />} />
+        <Route path="/history " element={<AboutPage />} /> 
+
         <Route path="/academicpage" element={<AcademicsPage />} /> 
         <Route path="/ourteam" element={<Ourteam />} /> 
         <Route path="/contactus" element={<Contactus />} /> 
@@ -78,7 +85,7 @@ function App() {
         <Route path="/library" element={<Library />} /> 
         <Route path="/news-page" element={<NewsPage />} /> 
         <Route path="/article" element={<Article />} /> 
-        <Route path="/history" element={<Abouttoppage />} /> 
+        {/* <Route path="/history " element={<Abouttoppage />} />  */}
         <Route path="/welcomecard" element={<WelcomeCard />} /> 
         <Route path="/notices" element={<NoticePage />} /> 
         <Route path="/missionvission" element={<MissionVision />} /> 
@@ -87,6 +94,7 @@ function App() {
         <Route path="/parenttestimonial" element={<Parenttestimonial />} /> 
         <Route path="/infrastruture" element={<Infrastructure />} /> 
         <Route path="/resources" element={<Resources />} /> 
+        <Route path="/faculty" element={<Faculty />} /> 
 
 
       </Routes>

@@ -141,6 +141,7 @@ body {
   display: flex;
   gap: 10px;
   padding: 6px;
+  cursor: pointer;
 }
 
 .icon {
@@ -216,16 +217,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* Increased gap for larger screens */
+  gap: 30px;
   padding: 0;
   list-style: none;
+  /* border: 1px solid red; */
 }
 
 .navListContent {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 20px;
   font-family: "Roboto";
+  /* border: 1px solid red; */
 }
 
 
@@ -260,7 +264,7 @@ body {
   max-height: 100vh;
 }
 
-.activeLink {
+/* .activeLink {
   color: #000;
   font-weight: bold;
   text-decoration: none;
@@ -275,7 +279,7 @@ body {
   width: 100%;
   height: 2px;
   background-color: var(--theme-color);
-}
+} */
 
 
 .closeButton {
@@ -319,6 +323,11 @@ body {
   width: 25px;
   height: 4px;
   background-color: #333;
+}
+.activeLink {
+  color: var(--theme-color) !important; 
+  font-weight: bold;
+  border-bottom: 3px solid var(--theme-color); 
 }
 
 
@@ -420,5 +429,239 @@ body {
   .btnadmissionbtn {
     font-size: 12px;
     padding: 8px 16px;
+  }
+}
+
+/* === MOBILE-FIRST + ACCESSIBILITY ENHANCEMENTS === */
+
+/* BASE STYLES: Mobile-First */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:focus,
+button:focus {
+  /* outline: 2px solid var(--theme-color); */
+  outline-offset: 2px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 4px;
+  background-color: #333;
+}
+
+.navListContent {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  z-index: 999;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.navListContent.active {
+  display: flex;
+}
+
+.navList a {
+  padding: 16px;
+  font-size: 18px;
+  color: white;
+}
+
+.btnapplybtn,
+.btnadmissionbtn {
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  max-width: 240px;
+  margin-bottom: 10px;
+  background-color: var(--theme-color);
+  color: white;
+}
+
+.btnapplybtn:hover,
+.btnadmissionbtn:hover {
+  background-color: #003de6;
+}
+
+.viewallbtn {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .topbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contactInfo,
+  .topheadright {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbarcontainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbarbuttons {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .navList {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navListContent {
+    position: static;
+    background: transparent;
+    flex-direction: row;
+    height: auto;
+    padding-top: 0;
+    color: black;
+  }
+
+  .navList a {
+    color: black;
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  .btnapplybtn,
+  .btnadmissionbtn {
+    width: auto;
+  }
+}
+
+/* === Responsive Header Enhancements === */
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  .info {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .topheadright {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .dasho {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .socialIcons {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* === Enhanced Mobile View Header Logic === */
+
+/* Hide topbar and navbarbuttons on small screens */
+@media (max-width: 768px) {
+  .topbar,
+  .navbarbuttons,
+  .navbartitle {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbarlogo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .newsUpdates {
+    display: flex;
+  }
+}
+
+/* === Desktop View Adjustments === */
+@media (min-width: 769px) {
+  .hamburger,
+  .closeButton {
+    display: none !important;
+  }
+
+  .navListContent {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    height: auto;
+    padding-top: 0;
+    color: black;
+  }
+
+  .navList a {
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }

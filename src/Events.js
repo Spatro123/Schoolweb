@@ -4,25 +4,25 @@ import img from './old-masters-picture-gallery-dresden-night.jpg';
 import img2 from './photo.png';
 import icon from './school (1).png';
 import icon1 from './education (1).png';
-import icon2 from './athelete.png';
+import icon2 from './Etc.JPG';
 
 const CardSection = () => {
   const cards = [
-    { image: img,
+    { image: icon2,
       icon: icon,
       title: " Expert Teachers",
      
       description: "Learn from seasoned educators and subject matter experts",
     },
     {
-      image: img,
+      image: icon2,
       icon: icon1,
       title: "Holistic Education",
       
       description: " Fostering growth beyond academics for well-rounded success.",
     },
     {
-      image: img,
+      image: icon2,
       icon: icon2,
       title: "Scholarship Programs",
       description: "Empowering bright minds with financial support.",

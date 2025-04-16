@@ -22,11 +22,17 @@ const Header1 = () => {
           <span>info@institute.edu</span>
         </div>
         <div className={classes.socialIcons}>
-          <img src={facebook} alt="Facebook" />
+          <a href="https://www.facebook.com/profile.php?id=61575073175798" target="_blank" rel="noopener noreferrer">
+            <img src={facebook} alt="Facebook" />
+          </a>
           <img src={twitter} alt="Twitter" />
           <img src={linkedin} alt="LinkedIn" />
-          <img src={instagram} alt="Instagram" />
-          <img src={youtube} alt="YouTube" />
+          <a href="https://www.instagram.com/et_classes?utm_source=qr&igsh=aWlmbWtwbms1bTQ3" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="Instagram" />
+          </a>
+          <a href="https://youtube.com/@etcmedia?si=QUWoIlAOn9frtEtm" target="_blank" rel="noopener noreferrer">
+            <img src={youtube} alt="YouTube" />
+          </a>
         </div>
         <button className={classes.loginButton}>
           <img src={account} alt="Login" />
@@ -55,7 +61,7 @@ const Header1 = () => {
       </nav>
       <div className={classes.newsUpdates}>
         <span>News Updates:</span>
-        <p>Important Notice: Admission at Rajagiri is managed by the Institute.</p>
+        <p>Important Notice: Admission at ESSENTIAL Tutorials is managed by the Institute.</p>
         <button className={classes.viewAllButton}>View All</button>
       </div>
     </header>

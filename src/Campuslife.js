@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Campuslife.module.css';  
-import img1 from './clg.jpg';  
-import img2 from './clg.jpg'; 
-import img3 from './clg.jpg';  
+import img1 from './Banner1.JPG';  
+import img2 from './Etpic8.JPG'; 
+import img3 from './Etpic7.JPG';  
 
 const studentLifeActivities = [
   {

@@ -1,150 +1,213 @@
-
-.container {
-    font-family: "Roboto";
-    margin: 20px auto;
-    max-width: 1400px;
-    padding: 20px;
-    background-color: #fdfdfd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 30px;
+.resourcePage {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-}
-
-.header h1 {
-    font-size: 2.8em;
-    margin: 0;
-    color: #2a4b7c;
-}
-
-.section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.section h2 {
-    color: var(--theme-color);
-    margin-bottom: 10px;
-}
-
-.section p {
-    color: #555;
-    line-height: 1.6;
-}
-
-
-.image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.imageGrid {
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Filter toggle button */
+  .filterToggle {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.imageLink {
-    display: block;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.imageLink:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.image {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-
-.viewAllButton {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .filterIconButton {
     background-color: var(--theme-color);
+    color: white;
     border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
+    padding: 0.7rem 1.4rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-}
-
-.viewAllButton:hover {
-    background-color: darken(var(--theme-color), 10%);
-}
-
-
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
+  }
+  
+  .filterIconButton:hover {
+    background-color: #293ab9;
+  }
+  
+  .filterIcon {
+    font-size: 1.2rem;
+  }
+  
+  /* Filters section (hidden until toggled) */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--theme-color);
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    animation: dropdown 0.3s ease;
+  }
+  
+  @keyframes dropdown {
+    from {
+      opacity: 0;
+      transform: scaleY(0.95);
     }
-
-    .section {
-        padding: 15px;
+    to {
+      opacity: 1;
+      transform: scaleY(1);
     }
-
-    .section h2 {
-        font-size: 1.5em;
+  }
+  
+  .filterGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 160px;
+  }
+  
+  .filterGroup label {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--theme-color);
+    letter-spacing: 0.5px;
+  }
+  
+  .filterGroup button {
+    background: linear-gradient(to right, #ecf0f1, #ffffff);
+    border: 1px solid #dfe6e9;
+    padding: 0.5rem 1.2rem;
+    margin: 0.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--theme-color);
+    font-weight: 500;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .filterGroup button:hover {
+    background: linear-gradient(to right, #dcdde1, #f1f2f6);
+    transform: scale(1.05);
+  }
+  
+  .active {
+    background: linear-gradient(to right, var(--theme-color), #3498db) !important;
+    color: #fff !important;
+    font-weight: bold;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(41, 128, 185, 0.2);
+  }
+  
+  /* Resource cards */
+  .resourceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .filterIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  .resourceCard {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .resourceCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resourceCard h3 {
+    font-size: 1.3rem;
+    color: var(--theme-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .resourceCard p {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+  }
+  
+  .typeTag {
+    display: inline-block;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    width: fit-content;
+  }
+  
+  .viewButton {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background-color: var(--theme-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewButton:hover {
+    background-color: #1e3b84;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 600px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
     }
-
-    .section p {
-        font-size: 1em;
+  
+    .filterIconButton {
+      width: 90%;
+      justify-content: center;
     }
-
-    .image {
-        width: 100%;
-        height: auto;
+  
+    .resourceCard {
+      padding: 1rem;
     }
-}
-
-@media (max-width: 576px) {
-    .header {
-        margin-bottom: 20px;
+  
+    .heading {
+      font-size: 2rem;
     }
-
-    .header h1 {
-        font-size: 1.8em;
+  
+    .subheading {
+      font-size: 1rem;
     }
-
-    .imageGrid {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .image {
-        width: 100%;
-        max-height: 200px;
-    }
-
-    .viewAllButton {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-}
+  }
+  

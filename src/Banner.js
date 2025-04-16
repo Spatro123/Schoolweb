@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Banner.module.css";
-import img from "./school.jpg";
-import img2 from "./img3.jpg";
-import img3 from "./clg1.jpg";
-import img4 from "./clg.jpg";
+import img from "./Banner1.JPG";
+import img2 from "./Banner2.JPG";
+import img3 from "./Banner3.JPG";
+import img4 from "./Etc.JPG";
 
 function Banner() {
   const images = [img, img2, img3, img4];

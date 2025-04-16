@@ -18,7 +18,7 @@
 }
 
 .filterSection .activeFilter {
-  background: #007bff;
+  background: var(--theme-color);
   color: #fff;
 }
 
@@ -37,31 +37,15 @@
 }
 
 .eventCard {
+  height: 350px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-
-.eventCard.festivals {
-  height: 300px;
-  width: 350px;
-}
-
-.eventCard.academics {
-  height: 350px;
-  width: 270px;
-}
-
-.eventCard.sports {
-  height: 400px;
-  width: 300px;
-}
-
-.eventCard.meetups {
-  height: 280px;
-  width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .image {
@@ -72,6 +56,10 @@
 
 .eventInfo {
   padding: 10px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .eventInfo h2 {
@@ -82,4 +70,8 @@
 .eventInfo p {
   color: #666;
   font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid;
+  padding: 4px;
+  margin-top: auto;
 }

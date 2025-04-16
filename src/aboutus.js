@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import classes from './Welcomemsg.module.css';
-import Banner from './Banner.png'; 
-import image1 from './img3.jpg';
-import image2 from './img4.jpg';
-import image3 from './img3.jpg';
-import img from './school.jpg';
+import Banner from './Banner7.JPG'; 
+import image1 from './Banner5.JPG';
+import image2 from './Banner3.JPG';
+import image3 from './Banner4.JPG';
+import img from './Banner6.JPG';
 import youtube from './youtube.png';
 
 function App() {

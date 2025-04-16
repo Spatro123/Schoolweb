@@ -16,17 +16,16 @@
 
 .header p {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--themecolor);
+    text-align: center;
 }
 
-/* Main content layout */
 .main {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap; /* Allows the elements to wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
-/* Articles section */
 .articles {
     flex: 3;
     display: grid;
@@ -66,11 +65,13 @@
 .content h2 {
     font-size: 1.5rem;
     margin: 1rem 0;
+    text-align: left;
 }
 
 .content p {
     font-size: 1rem;
     color: #555;
+    text-align: justify;
 }
 
 /* Sidebar section */

@@ -29,6 +29,17 @@
   transition: transform 0.3s ease-in-out;
   opacity: 0;
   animation: fadeSlideIn 5s ease-in-out infinite;
+
+}
+.additionalInfo {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  background: #f9f9f9;
+  padding: 10px;
+  /* border-left: 3px solid #007acc; */
+  border-radius: 5px;
 }
 
 .testimonialCard:nth-child(1) {
@@ -67,6 +78,9 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+  border: 1px solid var(--theme-color);
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .testimonialContent {

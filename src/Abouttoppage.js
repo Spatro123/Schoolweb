@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './abouttopage.module.css';
-import headerImage from './Banner.png';
-import schoolImage1 from './old-masters-picture-gallery-dresden-night.jpg';
-import schoolImage2 from './Graduatio.jpg';
+import headerImage from './Banner7.JPG';
+import schoolImage1 from './Etpic7.JPG';
+import schoolImage2 from './Etoic6.JPG';
 
 const AboutPage = () => {
   return (
@@ -24,13 +24,18 @@ const AboutPage = () => {
             <img src={schoolImage1} alt="School Image 1" className={classes.curvedImage} />
           </div>
           <div className={classes.textContainer}>
+          <strong>"Education Beyond Learning"</strong>
             <p>
-              This inspiring journey began with the illustrious <strong>Lt. Col. S. S. Khurana</strong>, whose dedicated service in the Army spanned 28 years before his retirement in 1977. Following his premature retirement, he relocated to Bhubaneswar in June 1977, where he and Mrs. Inderjit Khurana’s passion for revolutionizing preschool education in Odisha came together. In January of 1978, they laid the foundation for what would become the first preschool in Bhubaneswar.
+           
+
+In an era where educational institutions are rapidly emerging across every corner, a valid question arises—“Why another institute?” The answer lies in our unique approach to education, built on the belief that true learning goes far beyond textbooks and exams. At Essential Tutorial Classes (ETC), we don't just aim to teach—we aim to transform.
 
             </p>
             <p>
-            With just two children, the school opened its doors in February of 1978, marking the dawn of a new era in early education. Mrs. Khurana, a torchbearer in her own right, championed a philosophy where practicality trumped formality – her teachers were encouraged to wear attire conducive to movement and engagement, embodying a commitment to action over appearances. She believed in getting the work done rather than dressing up for it.</p>
-          </div>
+            We recognize that the journey to academic excellence is not just about syllabus completion. In today’s highly competitive and technology-driven world, the pillars of success are:
+Concept clarity, Creative thinking, Personal care, Self-confidence, and Smart use of Technology.
+And at ETC, we are committed to nurturing all of these in every learner.</p>        
+  </div>
         </div>
 
         <div className={`${classes.contentRow} ${classes.reverseRow}`}>
@@ -39,11 +44,22 @@ const AboutPage = () => {
           </div>
           <div className={classes.textContainer}>
             <p>
-            Word quickly spread of the school’s innovative approach, attracting eager parents with two-year-old children seeking admission. Within the initial three years, the school burgeoned to accommodate 100 children, prompting a pressing need to expand into higher grades. Gradually evolving to encompass classes up to VII, the school acquired multiple buildings in the Forest Park Area, symbolising its growing influence and impact.
-            </p>
+            We believe that every competitor is a student, but not every student is a competitor. A student studies with the intention of scoring marks, while a competitor learns with a deeper purpose—to grow intellectually, to challenge limits, and to pursue knowledge beyond examinations. Our mission is to instill this competitive mindset in each and every student.            </p>
 
-            <p>In 1984, the government recognized Mrs. Khurana’s relentless dedication to education by granting her a 1-acre plot on a 99-year lease, a testament to her enduring legacy. Construction commenced in 1996, coinciding with the school’s provisional ICSE affiliation, culminating in its inaugural class IX admissions in 1997 and the first batch graduating in March of 1999.</p>
-            <p> In 1995, the Khurana family’s commitment to educational excellence was further solidified with the return of Mr. Gurpreet Singh Khurana, Mrs. Khurana’s younger son, who assumed an integral role in the school’s administration. His marriage to Mrs. Leena Khurana in 1996 heralded a new chapter, setting the stage for their eventual succession in 2011. </p>
+            <p> <strong>At ETC, our team of experienced and passionate educators focus on: </strong>
+
+Strong Conceptual Foundation: Ensuring students grasp the 'why' behind every topic.
+
+Skill-Based Learning: Encouraging problem-solving, critical thinking, and logical reasoning.
+
+Mentorship & Motivation: Creating a nurturing environment where every student feels guided, valued, and confident.
+
+Technology Integration: Leveraging smart tools and digital platforms for an enhanced learning experience.
+
+Beyond Classroom Support: Providing regular assessments, doubt-clearing sessions, and performance tracking to keep every student on the path to improvement.</p>
+            <p> We share a common vision—to develop not just high scorers, but lifelong learners and achievers. The transformation from a regular student to a true competitor begins with the right mindset, guidance, and support—and that’s exactly what we offer at Essential Tutorial Classes.
+
+</p>
           </div>
          
         </div>

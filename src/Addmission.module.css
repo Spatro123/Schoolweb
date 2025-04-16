@@ -245,11 +245,50 @@
   margin-top: 20px;
   
 }
+.info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-left: 5px solid #1d4ed8;
+  border-right: 5px solid #1d4ed8;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
+.info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+  font-weight: 600;
+  text-align: left;
+}
+
+.info h4 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+  font-weight: 500;
+  text-align: left;
+}
+
+.list {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.list li {
+  list-style: disc;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  text-align: left;
+}
 
 .Applyhead{
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 20px;
 }
 
@@ -282,6 +321,96 @@
   list-style-type: disc;
   padding-left: 20px;
   text-align: left;
+}
+.feeStructure {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feeStructure h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feeStructure h3 {
+  font-size: 1.4rem;
+  color: #0f172a;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feeStructure h4 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.feeStructure p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #475569;
+}
+
+.feeStructure ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+  color: #374151;
+}
+
+.feeStructure ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.feeStructureTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.feeStructureTable th,
+.feeStructureTable td {
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.feeStructureTable th {
+  background-color: #1d4ed8;
+  color: white;
+  font-weight: 600;
+}
+
+.feeStructureTable tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.feeStructureTable tr:hover {
+  background-color: #e2e8f0;
+}
+
+@media screen and (max-width: 768px) {
+  .feeStructure {
+    padding: 1rem;
+  }
+
+  .feeStructureTable {
+    font-size: 0.85rem;
+  }
+
+  .feeStructureTable th,
+  .feeStructureTable td {
+    padding: 0.5rem;
+  }
 }
 
 /* Responsive Styles for Small Screens */

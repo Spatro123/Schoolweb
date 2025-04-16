@@ -1,7 +1,7 @@
 // File: src/StudentCard.js
 import React from "react";
 import classes from './Result.module.css';
-import img from './boy.png'; // Default image
+import img from './topper.jpeg'; 
 
 const StudentCard = ({ student }) => {
   return (

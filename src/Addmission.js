@@ -5,6 +5,7 @@ import postgraduate from "./graduated.png";
 import doctoral from './graduated.png';
 import stepIcon from "./foot-print.png";
 import FAQs from './Faq';
+import CourseFees from './Coursefees';
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -16,25 +17,25 @@ const App = () => {
   });
 
   const steps = [
-    { id: 1, title: 'STEP 1', description: 'Fill the Application Form\nBefore the last date.' },
-    { id: 2, title: 'STEP 2', description: 'Upload Your Documents\nPhotograph, Signature & Marksheet' },
-    { id: 3, title: 'STEP 3', description: 'Appear for KIITEE Entrance\nTest (Online Examination)' },
-    { id: 4, title: 'STEP 4', description: 'Appear for the Counselling' },
+    { id: 1, title: 'STEP 1', description: 'Admission form fill up.' },
+    { id: 2, title: 'STEP 2', description: 'Parents Id proof(Aadhar/pan)' },
+    { id: 3, title: 'STEP 3', description: 'Students ID proof(Aadhar/pan)' },
+    { id: 4, title: 'STEP 4', description: 'Students last academic report card' },
   ];
 
   const programs = [
     { 
-      title: 'Undergraduate', 
+      title: '10th', 
       description: 'Study Engineering, Health Sciences, Management, Law, Fashion, Film, and more.', 
       icon: graduate 
     },
     { 
-      title: 'Postgraduate', 
+      title: '12th', 
       description: 'Pursue advanced studies in Engineering, Medicine, Management, Law, and more.', 
       icon: postgraduate 
     },
     { 
-      title: 'Doctoral', 
+      title: 'OJEE & Adavance', 
       description: 'Engage in research in Science, Technology, Medicine, and more.', 
       icon: doctoral 
     },
@@ -130,9 +131,9 @@ const App = () => {
             className={classes.select}
           >
             <option value="">Select Program</option>
-            <option value="Undergraduate">Undergraduate</option>
-            <option value="Postgraduate">Postgraduate</option>
-            <option value="Doctoral">Doctoral</option>
+            <option value="Undergraduate">10th CBSE</option>
+            <option value="Postgraduate">12th CBSE</option>
+            <option value="Doctoral">OJEE & JEE Adavance</option>
           </select>
           <input
             type="file"
@@ -149,7 +150,7 @@ const App = () => {
 
 
 
-      <div className={classes.admissionDetails}>
+      {/* <div className={classes.admissionDetails}>
   <h2 className={classes.header}>Admissions in Centurion University (CUTM) 2025</h2>
   <p className={classes.details}>
     Candidates seeking admission to CUTM courses are required to appear for Centurion University Entrance Examination (CUEE) conducted by the University. The exam is primarily an online exam for the students aspiring to take admission in B.Tech (Regular and Lateral), B.Tech (Agri. Engg.), and B.Sc (Ag.) courses of the University. The exam is multiple choice in format and of national level standard.
@@ -274,8 +275,8 @@ const App = () => {
     Apply Online/Pay Online: Step 1 - Step 5
   </p> */}
 
-  <h3 className={classes.header}>Admission Cancellation & Refund Policy</h3>
-  <table className={classes.refundPolicyTable}>
+  {/* <h3 className={classes.header}>Admission Cancellation & Refund Policy</h3> */}
+  {/* <table className={classes.refundPolicyTable}>
     <thead>
       <tr>
         <th>Scenario</th>
@@ -292,10 +293,10 @@ const App = () => {
         <td>No refund will be provided in case of No Show after formal communication from the university.</td>
       </tr>
     </tbody>
-  </table>
+  </table> */}
 
-  <h3 className={classes.header}>Fee Structure from the Academic Year 2025-2026</h3>
-  <table className={classes.feeStructureTable}>
+  {/* <h3 className={classes.header}>Fee Structure from the Academic Year 2025-2026</h3> */}
+  {/* <table className={classes.feeStructureTable}>
     <thead>
       <tr>
         <th>Programme</th>
@@ -349,9 +350,62 @@ const App = () => {
       </tr>
     </tbody>
   </table>
+</div> */} 
+<div className={classes.feeStructure}>
+  <h2>Course Fee Structure for 2025–26</h2>
+  <p><strong>Admission Fees:</strong> ₹1,500 (One-time fee for regular classes)</p>
+  <p><strong>Transport Facility:</strong> Available as per requirement (Not included in course fees)</p>
+
+  <table className={classes.feeStructureTable}>
+    <thead>
+      <tr>
+        <th>Subjects</th>
+        <th>Annual Fee</th>
+        <th>Quarterly Fee</th>
+        <th>Monthly EMI</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        { subject: 'Mathematic', annual: 25000 },
+        { subject: 'Physics', annual: 25000 },
+        { subject: 'Chemistry', annual: 25000 },
+        { subject: 'Biology', annual: 25000 },
+        { subject: 'IT', annual: 15000 },
+        { subject: 'English', annual: 15000 },
+      ].map((item) => (
+        <tr key={item.subject}>
+          <td>{item.subject}</td>
+          <td>₹{item.annual.toLocaleString()}</td>
+          <td>₹{(item.annual / 4).toLocaleString()}</td>
+          <td>₹{(item.annual / 12).toFixed(0)}</td>
+          <td>1 Year</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+ <div className={classes.info}>
+  <h3>Special Activities Class (Integrated Coaching)</h3>
+  <div className={classes.list}>
+    <li><strong>Fees:</strong> ₹30,000 (Includes Admission Fees, Bag & T-Shirts)</li>
+    <li><strong>Eligibility:</strong> Only for students with above 70% marks in the previous academic year.</li>
+  </div>
+
+  <h3>Course Details for Special Activity Classes:</h3>
+  <div className={classes.list}>
+    <li>Subject-wise Entrance Classes – For JEE, OJEE, NEET, etc.</li>
+    <li>Communication Development Skills – Improve presentation & communication</li>
+    <li>Focused Exam Preparation – Study plans and mock tests</li>
+    <li>Smart Class Activities – Interactive sessions using PPTs</li>
+    <li>Event Activities – Leadership and organizational skill development</li>
+    <li>Basic Excel Classes – Essential technical training</li>
+  </div>
+  </div>
 </div>
 
 
+<CourseFees />
 
       <FAQs />
     </div>

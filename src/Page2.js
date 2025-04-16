@@ -3,7 +3,7 @@ import classes from './Page2.module.css';
 import AboutHeader from "./Aboutheader";
 import Mission from "./mission.png";
 import Vision from "./target.png";
-import pic from "./old-masters-picture-gallery-dresden-night.jpg"
+import pic from "./pic2.jpg"
 import Abouttoppage from "./Abouttoppage";
 import FacilitiesPage from './FacilitiesPage';
 
@@ -35,36 +35,36 @@ const AboutUs = () => {
             <h2 className={classes.centerAlign}>Leadership Team</h2>
             <div className={classes.sectionLeadershipTeam}>
                 <div className={classes.leaderProfile}>
-                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/principal.jpg" alt="LEENA KHURANA" />
-                    <h3>LEENA KHURANA</h3>
+                    {/* <img src="https://Essential Tutorial Classesschool.ac.in/wp-content/uploads/2022/10/principal.jpg" alt="LEENA KHURANA" /> */}
+                    <h3>Jogendra Das</h3>
                     <h4>Principal</h4>
-                    <p>At Ruchika, we believe in nurturing well-rounded personalities steeped in honesty, respect, and empathy...</p>
+                    <p>At Essential Tutorial Classes, we believe in nurturing well-rounded personalities steeped in honesty, respect, and empathy...</p>
                 </div>
                 
                 <div className={classes.leaderProfile}>
-                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/director1.jpg" alt="GURPREET KHURANA" />
-                    <h3>GURPREET KHURANA</h3>
+                    {/* <img src="https://Essential Tutorial Classesschool.ac.in/wp-content/uploads/2022/10/director1.jpg" alt="GURPREET KHURANA" /> */}
+                    <h3>Dr. Sushanta Kumar Sahoo</h3>
                     <h4>Director</h4>
-                    <p>Delighted to introduce Ruchika’s own website, marking 44 years of excellence in Bhubaneswar’s educational landscape...</p>
+                    <p>Delighted to introduce Essential Tutorial Classes’s own website, marking 44 years of excellence in Bhubaneswar’s educational landscape...</p>
                 </div>
             </div>
 
-            <h2 className={classes.centerAlign}>Founders</h2>
+            {/* <h2 className={classes.centerAlign}>Founders</h2> */}
             <div className={classes.sectionFounders}>
-                <div className={classes.leaderProfile}>
-                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/founder1.jpg" alt="Mrs. Inderjit Khurana" />
+                {/* <div className={classes.leaderProfile}>
+                    <img src="https://Essential Tutorial Classesschool.ac.in/wp-content/uploads/2022/10/founder1.jpg" alt="Mrs. Inderjit Khurana" />
                     <h3>Mrs. Inderjit Khurana</h3>
                     <h4>Founder</h4>
                     <p>Founder of the Train Platform School Movement in India.</p>
-                </div>
-                <div className={classes.leaderProfile}>
-                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" alt="Mrs. Inderjit Khurana" />
+                </div> */}
+                {/* <div className={classes.leaderProfile}>
+                    <img src="https://Essential Tutorial Classesschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" alt="Mrs. Inderjit Khurana" />
                     <h3>Lt. Col. Surindar Singh Khurana</h3>
                     <h4>Co-Founder</h4>
                     <p>Founder of the Train Platform School Movement in India.</p>
-                </div>
+                </div> */}
                 {/* <div className={classes.leaderProfile}>
-                    <img src="https://ruchikaschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" />
+                    <img src="https://Essential Tutorial Classesschool.ac.in/wp-content/uploads/2022/10/founder3.jpg" alt="Lt. Col. Surindar Singh Khurana" />
                     <h3>Lt. Col. Surindar Singh Khurana</h3>
                     <h4>Co-Founder</h4>
                     <p>A sportsman and educational visionary.</p>
@@ -73,7 +73,7 @@ const AboutUs = () => {
 
             <div className={`${classes.section} ${classes.centerAlign}`}>
                 <h2>What Parents Say</h2>
-                <blockquote>“Ruchika high school is one of the popular schools in India with an excellent academic record and supportive teachers.”</blockquote>
+                <blockquote>“Essential Tutorial Classes high school is one of the popular schools in India with an excellent academic record and supportive teachers.”</blockquote>
                 <p>- Mitali Mohanty, Parent</p>
             </div>
 
@@ -83,12 +83,12 @@ const AboutUs = () => {
                     <div className={`${classes.frame} ${classes.missionFrame}`}>
                         <img src={Mission} alt="Mission Icon" />
                         <h3>Our Mission</h3>
-                        <p>To foster academic excellence, leadership qualities, and holistic development in every student.</p>
+                        <p>To achieve academic excellence at par with the compettitive scenario of education in this fast chnaging textContainer savvy world by creating an environment where learning takes place naturally.</p>
                     </div>
                     <div className={`${classes.frame} ${classes.visionFrame}`}>
                         <img src={Vision} alt="Vision Icon" />
                         <h3>Our Vision</h3>
-                        <p>To be a leading institution that nurtures responsible citizens and lifelong learners.</p>
+                        <p>To  impact the value based education in an environment that transform lives through an understanding of the needs of society for sustainable growth & harmony with nature.</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-<FacilitiesPage />
+{/* <FacilitiesPage /> */}
         </div>
     );
 };

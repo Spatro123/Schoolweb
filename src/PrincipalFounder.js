@@ -1,22 +1,22 @@
 import React from "react";
 import classes from "./PrincipalFounder.module.css";
-import principalImage from "./Trushan.png";
-import founderImage from "./Trushan.png";
+import principalImage from "./Jog.jpeg";
+import founderImage from "./Dr.jpg";
 
 const PrincipalFounder = () => {
   const people = [
     {
-      name: "Dr. Tribhuban Swami",
-      designation: "Principal",
+      name: "Jagendra Das",
+      designation: "Founder",
       message:
-        "Welcome to our school! Our mission is to inspire and empower our students to achieve their full potential and become leaders of tomorrow.",
+        "Welcome to our Etc., Our mission is to inspire and empower our students to achieve their full potential and become leaders of tomorrow.",
       image: principalImage,
     },
     {
-      name: "Ms. Alka Puraohit",
-      designation: "Founder",
+      name: "Dr. Sushanta Kumar Sahoo",
+      designation: "Chief Academic Advisor ",
       message:
-        "As the founder, I am proud to see our vision of excellence in education come to life. We believe in nurturing talent and fostering a love for learning.",
+        "As the Chief Academic Advisor, I am proud to see our vision of excellence in education come to life. We believe in nurturing talent and fostering a love for learning.",
       image: founderImage,
     },
   ];
