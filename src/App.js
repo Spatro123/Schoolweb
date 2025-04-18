@@ -50,7 +50,7 @@ function App() {
     <div className={classes.App}>
       <Header1 />
       <Routes>
-        <Route path="/Home" element={
+        <Route path="/" element={
           <>
             <Banner />
             <div className={classes.content}>
@@ -59,7 +59,7 @@ function App() {
             <Count />
             <About />
             <PrincipalFounder />
-            <CoursesPage />
+            {/* <CoursesPage /> */}
             <Virtualtour />
             <Result />
             <CampusLifePage />

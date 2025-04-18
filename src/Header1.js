@@ -74,7 +74,7 @@ const Header1 = () => {
             </a>
           </div>
 
-          <div className={classes.dasho}>
+          {/* <div className={classes.dasho}>
             <img src={account} alt="Profile" className={classes.account} />
             <a
               href="https://dashoapp.com"
@@ -84,14 +84,14 @@ const Header1 = () => {
             >
               <div className={classes.logtext}>Login to Dasho</div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Navbar */}
       <div className={classes.navbarcontainer}>
         <div className={classes.navbarlogo}>
-          <Link to="/Home" className={classes.navbarlogo} onClick={closeMenu}>
+          <Link to="/" className={classes.navbarlogo} onClick={closeMenu}>
             <img
               src={logo}
               alt="Institute Logo"
@@ -102,11 +102,11 @@ const Header1 = () => {
               <p>INNOVATION . INSPIRE . EDUCATE</p>
             </div>
           </Link>
-
+{/* 
           <div className={classes.navbartitle}>
             <h1>ESSENTIAL CLASSES</h1>
             <p>INNOVATION . INSPIRE . EDUCATE</p>
-          </div>
+          </div> */}
         </div>
         <div className={classes.navbarbuttons}>
           <button className={classes.btnadmissionbtn}>TAKE ADMISSION</button>
@@ -127,9 +127,9 @@ const Header1 = () => {
   </button>
 
           <Link
-            to="/Home"
+            to="/"
             className={`${classes.navLink} ${
-              isActive("/Home") ? classes.activeLink : ""
+              isActive("/") ? classes.activeLink : ""
             }`}
             onClick={closeMenu}
           >
