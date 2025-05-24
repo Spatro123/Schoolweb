@@ -3,7 +3,7 @@ import classes from "./Banner.module.css";
 import img from "./Banner1.JPG";
 import img2 from "./Banner2.JPG";
 import img3 from "./Banner3.JPG";
-import img4 from "./Etc.JPG";
+import img4 from "./Etc1.JPG";
 
 function Banner() {
   const images = [img, img2, img3, img4];

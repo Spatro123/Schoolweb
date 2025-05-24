@@ -13,8 +13,8 @@ import ppl4 from "./Prabhu.jpeg";
 
 const academicHead = {
   image: ppl3,
-  name: "Mr. Anjan Kumar",
-  designation: "Academic Head & Faculty - Biology",
+  name: "Mr. Anjan Kumar Satapathy",
+  designation: "Academic Head & Faculty - Mathematics",
   qualification: "M.Sc, B.Ed",
   message: `Welcome to Essential Tutorial Classes! At etc, we are passionate about empowering students to achieve their full potential. Our dedicated faculty and staff work together to create a supportive and inclusive learning environment.
 
@@ -26,26 +26,26 @@ From the Desk of the Academic Head`,
 const facultyData = [
   {
     image: ppl,
-    name: "Ms. Baishali Das",
+    name: "Ms. Baishali Pattnaik",
     designation: "Senior Faculty - Chemistry",
     qualification: "M.Sc, B.Ed",
   },
   {
     image: ppl1,
-    name: "Mr. Sritikirti Panda",
-    designation: "Senior Faculty - Physics",
+    name: "Ms. Sritikirti Mishra",
+    designation: "Senior Faculty - Biology",
     qualification: "M.Sc, B.Ed",
   },
   {
     image: ppl2,
     name: "Mr. Himansu Shekhar",
-    designation: " Exam Coordinator ",
+    designation: " Mathematic & Physics ",
     qualification: "B.Sc. & B.Ed",
   },
   {
     image: ppl4,
     name: "Mr. Prabhu Narayan",
-    designation: "Faculty - English",
+    designation: "Faculty - Mathematics",
     qualification: "M.A, B.Ed",
   },
 ];
@@ -70,6 +70,7 @@ const Faculty = () => {
           <p>{academicHead.message}</p>
         </div>
       </div>
+
       <div className={classes.info}>
       <p>Qualified & Experienced Educators at Essential Classes</p> </div>
       <div className={classes.facultyGrid}>
@@ -84,6 +85,9 @@ const Faculty = () => {
           </div>
         ))}
       </div>
+
+
+      
     </div>
   );
 };

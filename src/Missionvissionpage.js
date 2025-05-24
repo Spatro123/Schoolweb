@@ -62,8 +62,9 @@ const MissionVision = () => {
           Our <span className={classes.highlight}>Vision</span>
         </h2>
         <p>
-          Being a hassle-free service provider is our consistent goal. Every client is an opportunity for us to create another milestone beyond the previous achievements.
-        </p>
+        To impact the value based education in an environment that transform lives through an understanding of the needs of society for sustainable growth & harmony with nature.
+
+</p>
       </motion.section>
 
       <section className={classes.sectionwhyus}>

@@ -71,7 +71,10 @@ const Footer = () => {
       <div className={classes.contactInfo}>
         <div className={classes.contact}>
           <img src={location} alt="Location" className={classes.contactIcon} />
+         <div className={classes.address}>
           <p>K6, Kalinga Vihar, Odisha, India</p>
+          <p>K4, Kalinga Vihar, Odisha ,India</p>
+          </div>
         </div>
         <div className={classes.contact}>
           <img src={call} alt="Phone" className={classes.contactIcon} />

@@ -111,3 +111,25 @@
   line-height: 1.5;
   text-align: justify;
 }
+
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 6px;               /* makes scrollbar thinner vertically */
+  height: 6px;              /* makes scrollbar thinner horizontally */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;  /* or any subtle background */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* color of the scrollbar thumb */
+  border-radius: 3px;                  /* rounded edges */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}

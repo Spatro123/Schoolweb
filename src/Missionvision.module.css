@@ -72,26 +72,32 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    justify-content: center;
-    align-items: start;
+    align-items: stretch; /* key to making all grid items same height */
     padding: 2rem 5%;
   }
+  
   .feature {
     background: #fff;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* allows uniform height in the grid */
   }
   
   
   .feature h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    text-align: left;
   }
   
   .feature p {
     font-size: 0.9rem;
     color: #555;
+    text-align: justify;
   }
   

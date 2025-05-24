@@ -63,7 +63,7 @@ function App() {
             <Virtualtour />
             <Result />
             <CampusLifePage />
-            <Recognitions />
+            {/* <Recognitions /> */}
             <Parenttestimonial />
             {/* <ResearchSpotlight /> */}
             {/* <Whyus /> */}
