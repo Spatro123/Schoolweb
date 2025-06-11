@@ -2,9 +2,9 @@ import React from 'react';
 import classes from './Event.module.css';
 import img from './old-masters-picture-gallery-dresden-night.jpg';
 import img2 from './photo.png';
-import icon from './school (1).png';
-import icon1 from './education (1).png';
-import icon2 from './Etc.JPG';
+import icon from './Etpic5.JPG';
+import icon1 from './Etpic2.JPG';
+import icon2 from './Etpic1.JPG';
 
 const CardSection = () => {
   const cards = [
@@ -15,14 +15,14 @@ const CardSection = () => {
       description: "Learn from seasoned educators and subject matter experts",
     },
     {
-      image: icon2,
+      image: icon,
       icon: icon1,
       title: "Holistic Education",
       
       description: " Fostering growth beyond academics for well-rounded success.",
     },
     {
-      image: icon2,
+      image: icon1,
       icon: icon2,
       title: "Scholarship Programs",
       description: "Empowering bright minds with financial support.",
